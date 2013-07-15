@@ -3,3 +3,4 @@ static/
 media/
 db
 *.pyc
+.sass-cache

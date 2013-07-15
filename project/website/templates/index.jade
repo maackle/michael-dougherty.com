@@ -1,3 +1,7 @@
 !!!
-
-h1 hi
+{% load staticfiles %}
+html
+	head
+		link(rel="stylesheet", href="{% static 'css/main.css' %}")
+	body
+		h1 hi
