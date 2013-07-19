@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+@import url(http://fonts.googleapis.com/css?family=Autour+One);
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Cherry+Swash:400,700);
+
+@import "compass/reset";
+@import "susy";
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+body {
+	font-family: 'Cherry Swash', sans-serif;
+	background: #fff;
+	text-align: center;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	margin: 0.5em auto;
+}
+
+h1, h2, h3, h4 {
+	// font-family: 'Rokkitt', serif;
+	// letter-spacing: -0.11em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.67em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.33em; }
+
+hr {
+	height: 1px;
+	background: #000;
+	border: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.container {
+	background: white;
+	@include container;
+}
+
+section {
+	text-align: left;
+
+	h1.head {
+		text-align: left;
+		font-size: 3em;
+		float: left;
+		margin: 0 15px 15px 0;
+		text-transform: lowercase;
+	}
+
+	margin: 20px auto;
+
+	@include clearfix;
+}
+
+section.portfolio {
+	.list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> .item {
+
+			// @include span-columns(6);
+
+			// &:nth-child(2n) {
+			// 	@include omega;
+			// }
+
+			img {
+				max-width: 100%;
+			}
+
+			.preview {
+				position: relative;
+				border: 1px solid black;
+				max-width: 800px;
+
+				.link {
+					padding: 3px 5px;
+					text-align: right;
+					background: rgba(white, 0.66);
+					background: #222;
+					a { color: white; }
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
+			}
+
+			.info {
+				margin: 10px auto 25px;
+			}
+		}
+
+		clear: both;
+	}
+}

@@ -1,0 +1,50 @@
+extends 'base'
+{% load staticfiles %}
+
+block content
+
+	header
+		h1 michael dougherty
+		h2 web developer
+
+	hr
+
+	section.hello
+		h1.head Hello!
+
+
+	section.portfolio
+		h1.head Featured Work
+		ul.list
+			li.item
+				.preview
+					img(src="{% static 'img/portfolio/ezza-preview.png' %}")
+					.link
+						a(href="http://ezzarose.com", target="_blank") ezzarose.com
+				.info
+					h2.name Ezza Rose
+					p A site made for Portland musician Ezza Rose
+			li.item
+				.preview
+					img(src="{% static 'img/portfolio/nkaza-preview.png' %}")
+					.link
+						a(href="http://nkaza.lv11.co", target="_blank") nkaza.lv11.co
+				.info
+					h2.name Nikhil Kaza
+					p A site made for Portland musician Ezza Rose
+			li.item
+				.preview
+					img(src="{% static 'img/portfolio/ilc-preview.png' %}")
+					.link
+						a(href="http://unc.lv11.co", target="_blank") unc.lv11.co
+				.info
+					h2.name Industrial Land Conversion
+					h3.client University of North Carolina at Chapel Hill
+					p An app
+			li.item
+				.preview
+					img(src="{% static 'img/portfolio/pineapple-preview.png' %}")
+					.link
+						a(href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/", target="_blank") characterarcade.com
+				.info
+					p A game

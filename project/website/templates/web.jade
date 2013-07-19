@@ -1,0 +1,53 @@
+extends 'base'
+{% load staticfiles %}
+
+block content
+	.page-web
+
+		h1.center Michael builds websites!
+
+		p 
+			| I am a freelance web developer and love to work on all kinds of projects.  I'm at ease in 
+			a(href="") a number of environments 
+			| and know HTML, CSS and Javascript like the 
+			a(href="") back of my hand.
+
+		h2.center Recent Work
+		section.portfolio
+			ul.list
+
+				li.item
+					a(href="http://nkaza.lv11.co", target="_blank").preview
+						img(src="{% static 'img/portfolio/nkaza-phi.png' %}")
+						h2.name nikhil kaza
+					.info
+						p Personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automatic bibliography generation.
+						p
+							i currently under construction
+
+				li.item
+					a(href="http://", target="_blank").preview
+						img(src="{% static 'img/portfolio/ilc-phi.png' %}")
+						h2.name Land Conversion Visualization
+					.info
+						p An application built to supplement a research project at the University of North Carolina at Chapel Hill.  Intended to be used by city planners, it displays various helpful metrics about land parcels and calculates the probability of them being re-zoned.
+						p
+							i currently under construction
+
+				li.item
+					a(href="http://ezzarose.com", target="_blank").preview
+						img(src="{% static 'img/portfolio/ezza-phi.png' %}")
+						h2.name ezzarose.com
+					.info
+						p A site made for Portland musician Ezza Rose
+
+				li.item
+					a(href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/", target="_blank").preview
+						img(src="{% static 'img/portfolio/pineapple-phi.png' %}")
+						h2.name Find the Famous Pineapple
+					.info
+						p 
+							| A game developed in conjunction with 
+							a(href="http://thisispop.com", target="_blank") This Is Pop 
+							| and 
+							a(href="http://partlyhuman.com") partlyhuman, inc. 

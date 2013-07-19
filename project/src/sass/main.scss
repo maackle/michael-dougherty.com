@@ -3,19 +3,22 @@
 @import url(http://fonts.googleapis.com/css?family=Autour+One);
 @import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Cherry+Swash:400,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 @import "compass/reset";
 @import "susy";
 
 $total-columns  : 12;             // a 12-column grid
-$column-width   : 4em;            // each column is 4em wide
-$gutter-width   : 1em;            // 1em gutters between columns
+$column-width   : 3.5em;            // each column is 4em wide
+$gutter-width   : 3em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
-body {
-	font-family: 'Oxygen', sans-serif;
+html, body {
+	font-family: 'Lato', sans-serif;
 	background: #fff;
-	text-align: center;
+	height: 100%;
 }
 
 a:link, a:visited {
@@ -28,10 +31,21 @@ a:link, a:visited {
 
 p {
 	margin: 0.5em auto;
+	line-height: 1.25em;
+}
+
+i, em {
+	font-style: italic;
+}
+
+b, strong {
+	font-weight: bold;
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Rokkitt', serif;
+	font-family: 'Inconsolata', serif;
+	text-transform: uppercase;
+	margin: 1em;
 	// letter-spacing: -0.11em;
 }
 
@@ -47,67 +61,120 @@ hr {
 	border-bottom: 1px solid #ddd;
 }
 
+.center { text-align: center; }
+
 .container {
-	background: white;
 	@include container;
 }
 
-section {
-	text-align: left;
-
-	h1.head {
-		text-align: left;
-		font-size: 3em;
-		float: left;
-		margin: 0 15px 15px 0;
-		text-transform: lowercase;
-	}
-
-	margin: 20px auto;
-
-	@include clearfix;
+@mixin dither($adj) {
+	background: url(/static/img/bg-dither-#{$adj}.png);
 }
 
-section.portfolio {
-	.list {
+.dither-dark { @include dither(dark); }
+.dither-gray { @include dither(gray); }
+.dither-white { @include dither(white); }
+
+#navbar {
+
+	font-family: 'Cherry Swash', sans-serif;
+
+	ul {
 		list-style: none;
-		margin: 0;
-		padding: 0;
 
-		> .item {
-
-			// @include span-columns(6);
-
-			// &:nth-child(2n) {
-			// 	@include omega;
-			// }
-
-			img {
-				max-width: 100%;
+		li {
+			display: inline-block;
+			a, span {
+				display: inline-block;
+				padding: 10px 30px;
 			}
 
-			.preview {
-				position: relative;
-				border: 1px solid black;
-				max-width: 800px;
-
-				.link {
-					padding: 3px 5px;
-					text-align: right;
-					background: rgba(white, 0.66);
-					background: #222;
-					a { color: white; }
-					position: absolute;
-					bottom: 0;
-					right: 0;
-				}
-			}
-
-			.info {
-				margin: 10px auto 25px;
+			&.michael {
+				background: #888 url(/static/img/bg-dither-dark.png);
+				color: white;
 			}
 		}
+	}
+}
 
-		clear: both;
+#stripes {
+
+	min-height: 100%;
+	
+	ul {
+		min-height: 100%;
+
+		li {
+
+
+			a {
+				display: block;
+				padding: 10px;
+				width: 100%;
+				height: 100%;
+				line-height: 100%;
+				font-size: 2em;
+				font-style: italic;
+			}
+
+			// &.code {
+			// 	background: #1FBED6;
+			// }
+			// &.music {
+			// 	background: #97C30A;
+			// }
+			// &.projects {
+			// 	background: #FF717E;
+			// }
+		}
+	}
+}
+
+.page-web {
+
+	.portfolio {
+		ul {
+			li {
+				@include span-columns(6);
+				margin-bottom: 25px;
+
+				&:nth-child(2n) {
+					@include omega;
+				}
+
+				img {
+					max-width: 100%;
+				}
+
+				.preview {
+					display: block;
+					position: relative;
+
+					img {
+						border-top: 3px double #333;
+						border-bottom: 3px solid #333;
+					}
+
+					.name {
+						// position: absolute;
+						// bottom: 0;
+						// right: 0;
+						margin: 0;
+						color: black;
+						text-shadow: 1px 1px 0 white;
+						@include dither(gray);
+
+						&.dark {
+							color: black;
+							text-shadow: 1px 1px 0 white;
+						}
+						&.light {
+							color: white;
+							text-shadow: 1px 1px 0 black;
+						}
+					}
+				}
+			}
+		}
 	}
 }

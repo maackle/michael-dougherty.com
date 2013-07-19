@@ -5,4 +5,15 @@ html
 		link(rel="stylesheet", href="{% static 'css/main.css' %}")
 	body
 		.container
+			block navbar
+				nav#navbar
+					ul
+						li.michael
+							span Michael does
+						li.web
+							a websites
+						li.music
+							a music
+						li.code
+							a code
 			block content
