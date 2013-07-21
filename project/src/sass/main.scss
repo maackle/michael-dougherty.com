@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
-@import url(http://fonts.googleapis.com/css?family=Autour+One);
-@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+// @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+// @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Autour+One);
+// @import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+// @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Cherry+Swash:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
@@ -12,26 +12,31 @@
 
 $total-columns  : 12;             // a 12-column grid
 $column-width   : 3.5em;            // each column is 4em wide
-$gutter-width   : 3em;            // 1em gutters between columns
+$gutter-width   : 2em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
 html, body {
 	font-family: 'Lato', sans-serif;
-	background: #fff;
+	background: #f2f2f2;
+	color: #666;
 	height: 100%;
 }
 
 a:link, a:visited {
 	text-decoration: none;
+	color: #0aa;
 
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
+		background: #d0d;
+		color: white;
 	}
 }
 
 p {
 	margin: 0.5em auto;
 	line-height: 1.25em;
+	text-align: justify;
 }
 
 i, em {
@@ -46,10 +51,12 @@ h1, h2, h3, h4 {
 	font-family: 'Inconsolata', serif;
 	text-transform: uppercase;
 	margin: 1em;
+	clear: both;
+	color: #111;
 	// letter-spacing: -0.11em;
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 2.5em; }
 h2 { font-size: 1.67em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.33em; }
@@ -61,23 +68,79 @@ hr {
 	border-bottom: 1px solid #ddd;
 }
 
+span[title] {
+	// display: inline-block;
+	border-bottom: 1px dashed black;
+	cursor: help;
+}
+
+.diag-h2 {
+	background: url(/static/img/bg-diagonal-black-8.png);
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+	margin: inherit auto inherit;
+	font-weight: bold;
+	clear: both;
+}
+
+.diag-h3 {
+	background: url(/static/img/bg-dither-black-12_5p.png) bottom left repeat-x;
+	padding: 0 0 6px;
+	// text-shadow: 2px 2px white;
+	// display: inline-block;
+	text-align: center;
+	margin: 20px auto 0;
+	color: #222;
+	// font-weight: bold;
+	clear: both;
+}
+
+hr.diag {
+	background: url(/static/img/bg-diagonal-black-8.png);
+	height: 16px;
+	width: 256px;
+	border: 0;
+	margin: 15px auto;
+	clear: both;
+}
+
+.bigger {
+	font-size: 1.1em;
+}
+
 .center { text-align: center; }
+
+.bg-yellow {
+	background: #ffa;
+}
 
 .container {
 	@include container;
+	min-width: 800px;
 }
 
 @mixin dither($adj) {
 	background: url(/static/img/bg-dither-#{$adj}.png);
 }
 
+
+.item, .summary {
+	&:hover {
+		background: #fff;
+		color: #333;
+	}
+}
+
 .dither-dark { @include dither(dark); }
 .dither-gray { @include dither(gray); }
+.dither-light { @include dither(light); }
 .dither-white { @include dither(white); }
 
 #navbar {
 
 	font-family: 'Cherry Swash', sans-serif;
+	font-size: 20px;
 
 	ul {
 		list-style: none;
@@ -86,15 +149,25 @@ hr {
 			display: inline-block;
 			a, span {
 				display: inline-block;
-				padding: 10px 30px;
+				padding: 10px 20px;
+			}
+			img {
+				vertical-align: middle;
 			}
 
 			&.michael {
 				background: #888 url(/static/img/bg-dither-dark.png);
-				color: white;
+				a { color: white; }
 			}
 		}
+
+		&.right {
+			float: right;
+		}
 	}
+
+	clear: both;
+	@include clearfix;
 }
 
 #stripes {
@@ -132,36 +205,66 @@ hr {
 
 .page-web {
 
-	.portfolio {
+	section {
+		margin: 30px 0;
+		clear: both;
+		@include clearfix;
+	}
+
+	.summary {
+		margin: 30px auto;
+		max-width: 800px;
+		p {
+			text-align: center;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+	}
+
+	.offerings {
 		ul {
 			li {
-				@include span-columns(6);
-				margin-bottom: 25px;
+				@include span-columns(3);
+				&:nth-child(4n) { @include omega; }
+			}
+		}
 
-				&:nth-child(2n) {
+	}
+
+	.portfolio {
+
+		ul {
+			li {
+				@include span-columns(4);
+
+				&:nth-child(3n) {
 					@include omega;
 				}
-
-				img {
-					max-width: 100%;
-				}
+				margin-bottom: 25px;
 
 				.preview {
 					display: block;
 					position: relative;
 
-					img {
+					img, .dummy-img {
 						border-top: 3px double #333;
 						border-bottom: 3px solid #333;
+						width: 100%;
+						max-width: 100%;
+					}
+
+					.dummy-img {
+						@include dither(gray);
+						border: 0;
+						padding: 29px 0;
 					}
 
 					.name {
-						// position: absolute;
-						// bottom: 0;
-						// right: 0;
 						margin: 0;
 						color: black;
 						text-shadow: 1px 1px 0 white;
+						min-height: 2em;
+						padding: 0 10px;
 						@include dither(gray);
 
 						&.dark {
@@ -174,7 +277,54 @@ hr {
 						}
 					}
 				}
+
+				&.your-site {
+					.info {
+						font-size: 1.1em;
+					}
+				}
 			}
 		}
 	}
+
+	.tools {
+		.item {
+			&:hover {
+				background: #ffc;
+				color: #222;
+			}
+		}
+		ul {
+			li {
+				p {
+					font-size: 0.8em;
+					text-align: left;
+				}
+				@include span-columns(2);
+
+				&:nth-child(6n) {
+					@include omega;
+				}
+
+			}
+		}
+	}
+}
+
+#post-header {
+	height: 16px;
+	background: url(/static/img/bg-dither-black-12_5p.png);
+}
+#pre-footer {
+	height: 64px;
+	background: url(/static/img/bg-hatch-black-8.png);
+	background: url(/static/img/bg-dither-black-12_5p.png);
+}
+
+#footer {
+	height: 90%;
+	// background: #444 url(/static/img/bg-hatch-black-8.png);
+	// background: #000 url(/static/img/bg-dither-gray.png);
+	background: #777 url(/static/img/bg-dither-black-12_5p-negative.png);
+	// border-top: 1px solid #aaa;
 }

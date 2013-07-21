@@ -4,42 +4,89 @@ extends 'base'
 block content
 	.page-web
 
-		h1.center Michael builds websites!
+		h1.center(style="margin-top: 80px;") Michael builds websites!
 
-		p 
-			| I am a freelance web developer and love to work on all kinds of projects.  I'm at ease in 
-			a(href="") a number of environments 
-			| and know HTML, CSS and Javascript like the 
-			a(href="") back of my hand.
+		.summary
+			p
+				| I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer and love to work on all kinds of projects.  
+				| I feel at home in a text editor and have dreams about code.
+				a(href="#contact") Email me at the address below 
+				|  and tell me about your project!
 
-		h2.center Recent Work
-		section.portfolio
+		section.offerings
+			a(name="offerings")
+
+			h2.center
+				.diag-h2 What I do
+
+			.summary
+				p
+					| In short, I do it all.  I can perform all the rites and rituals necessary 
+					br
+					| to move your website from concept into reality, 
+					//- br
+					| either by myself or on a team.
+			
 			ul.list
+				li.item
+					h3.diag-h3 Design & Planning
+					.info
+						p Form should follow function.  After determining the purpose of a site, I design with that purpose in mind.
+						p I tend towards clean, simple, usable designs.
+						p I often work with other designers with vastly different styles and have no problem bringing any vision to life.
+				li.item
+					h3.diag-h3 Implementation
+					.info
+						p I have the front-end skills to realize any design, whether my own or another designer's.  As a budding professional I cut my teeth implementing Photoshop designs handed to me by design agencies, so my HTML, CSS and Javascript are as fluent as my English, and I'm hip to the latest trends and best practices.
+				li.item
+					h3.diag-h3 Development
+					.info
+						p Development is my passion and forte.  I love writing code and have been doing it for over half of my life.  I studied Computer Science in grad school and have never stopped learning.  
+						p I often work alone, so my skills are well-rounded.  CMS integration, API architecture, database design, algorithms, you name it.  I'm willing and able to tackle just about any technical challenge.
+				li
+					.item
+						h3.diag-h3 Consulting
+						.info
+							p I've been building websites and applications of all kinds for years.  I've run into, and overcome, many obstacles.  Let me share my experience and save you time.
+					.item
+						h3.diag-h3 Hosting
+						.info
+							p I can host your site for you or help it find a proper home.
 
+		section.portfolio
+			a(name="portfolio")
+
+			h2.center
+				.diag-h2 Recent Work
+			ul.list
 				li.item
 					a(href="http://nkaza.lv11.co", target="_blank").preview
 						img(src="{% static 'img/portfolio/nkaza-phi.png' %}")
 						h2.name nikhil kaza
 					.info
-						p Personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automatic bibliography generation.
+						p Personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automatic bibliography generation.  Fully loaded!
 						p
-							i currently under construction
+							i.bg-yellow currently in development
 
 				li.item
 					a(href="http://", target="_blank").preview
 						img(src="{% static 'img/portfolio/ilc-phi.png' %}")
 						h2.name Land Conversion Visualization
 					.info
-						p An application built to supplement a research project at the University of North Carolina at Chapel Hill.  Intended to be used by city planners, it displays various helpful metrics about land parcels and calculates the probability of them being re-zoned.
+						p An application built to supplement a research project at the University of North Carolina at Chapel Hill.  It is intended to be used by city planners.  It displays various helpful metrics about land parcels and calculates the probability of them being re-zoned.
 						p
-							i currently under construction
+							i.bg-yellow currently in development
 
 				li.item
 					a(href="http://ezzarose.com", target="_blank").preview
 						img(src="{% static 'img/portfolio/ezza-phi.png' %}")
 						h2.name ezzarose.com
 					.info
-						p A site made for Portland musician Ezza Rose
+						p 
+							| A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate
+							a(href="http://campcreekrecords.com") Joe Hall
+							| .
+						p P.S. I'm a fan.
 
 				li.item
 					a(href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/", target="_blank").preview
@@ -51,3 +98,74 @@ block content
 							a(href="http://thisispop.com", target="_blank") This Is Pop 
 							| and 
 							a(href="http://partlyhuman.com") partlyhuman, inc. 
+							| for USA Network's TV show
+							a(href="http://www.usanetwork.com/psych") Psych.
+						p 
+							| I designed and wrote the backend code.
+
+				li.item
+					a(href="http://aedfineart.com", target="_blank").preview
+						img(src="{% static 'img/portfolio/duckler-phi.png' %}")
+						h2.name aedfineart.com
+					.info
+						p A simple site designed to showcase a Portlander's private art collection
+
+
+
+				li.item.your-site
+					a(href="#contact", target="_blank").preview
+						img.dummy-img(src="{% static 'img/portfolio/blank-phi.png' %}")
+						h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
+							| YOUR 
+							br
+							| SITE?
+					.info
+						p 
+							em 
+								| This could be you!
+						p
+							em
+								a(href="#contact") Contact me 
+								| to discuss your website.
+
+
+		//- section.tools
+
+		//- 	h2.center
+		//- 		.diag-h2 Tools used
+
+		//- 	.summary
+		//- 		p
+		//- 			| As a developer, I like collecting tools and am constantly searching for the best tools for the job.  
+		//- 			br
+		//- 			| Here's a rundown of my favorite software and why I use them in my projects.
+			
+		//- 	ul
+		//- 		li.item
+		//- 			h3.diag-h3
+		//- 				a(href="http://djangoproject.com") Django
+		//- 		li.item
+		//- 			h3.diag-h3
+		//- 				a(href="http://playframework.com") Play 2
+		//- 		li.item
+		//- 			h3.diag-h3
+		//- 				a(href="http://playframework.com") Sass
+		//- 		li.item
+		//- 			a(href="djangoproject.com") Django
+		//- 		li.item
+		//- 			a(href="djangoproject.com") Django
+
+		section.contact
+			a(name="contact")
+
+			h2.center
+				.diag-h2 Contact Info
+
+			.summary
+				p Rather than fill out some stodgy old contact form, why not just email me? 
+				p
+					img(src="/static/img/email.png")
+				p 
+					| I live in beautiful Portland, Oregon at the base of Mt. Tabor.
+					br
+					| Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)

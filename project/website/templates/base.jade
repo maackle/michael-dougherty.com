@@ -4,16 +4,27 @@ html
 	head
 		link(rel="stylesheet", href="{% static 'css/main.css' %}")
 	body
-		.container
-			block navbar
+
+		block navbar
+			.container
 				nav#navbar
+					ul.right
+						li
+							span
+								img(src="/static/img/nav-email.png")
 					ul
 						li.michael
-							span Michael does
+							a(href="/") Michael Dougherty
 						li.web
 							a websites
 						li.music
 							a music
 						li.code
 							a code
+				#post-header
+
+		.container
 			block content
+		block footer
+			#pre-footer
+			footer#footer
