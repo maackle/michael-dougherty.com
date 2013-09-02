@@ -9,17 +9,21 @@ module.exports = (grunt) ->
 			app: 'app'
 			dist: 'www'
 
+		connect:
+			server:
+				options:
+					port: 1337
+					base: '<%= config.dist %>'
+
 		watch:
-			options:
-				livereload: true
 			coffee:
-				files: ["<%= config.app %>/coffee/**/*.coffee"]
+				files: ["<%= config.app %>/coffee/*.coffee"]
 				tasks: ['coffee']
 			compass:
-				files: ["<%= config.app}/sass/**/*.{sass,scss %>"]
+				files: ["<%= config.app %>/sass/*.{sass,scss}"]
 				tasks: ['compass']
 			jade:
-				files: ['*.jade']
+				files: ['<%= config.app %>/*.jade']
 				tasks: ['jade']
 
 		coffee:
@@ -57,13 +61,13 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-contrib-compass')
 	grunt.loadNpmTasks('grunt-contrib-jade')
+	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-notify')
 
 	#// Default task(s).
 	grunt.registerTask 'default', [
-		'jade:dist'
-		'coffee:compile'
-		'compass:dist'
+		'build'
+		'connect'
 		'watch'
 	]
 
@@ -71,8 +75,4 @@ module.exports = (grunt) ->
 		'jade:dist'
 		'coffee:compile'
 		'compass:dist'
-	]
-
-	grunt.registerTask 'watch', [
-		'watch'
 	]
