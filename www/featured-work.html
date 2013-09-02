@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <ul class="right">
+          <li><span><img src="/static/img/nav-email.png"></span></li>
+        </ul>
+        <ul>
+          <li class="michael"><a href="/">Michael Dougherty</a></li>
+          <li class="web"><a>websites</a></li>
+          <li class="music"><a>music</a></li>
+          <li class="code"><a>code</a></li>
+        </ul>
+      </nav>
+      <div id="post-header"></div>
+    </div>
+    <div class="container">
+      <header>
+        <h1>michael dougherty</h1>
+        <h2>web developer</h2>
+      </header>
+      <hr>
+      <section class="hello">
+        <h1 class="head">Hello!</h1>
+      </section>
+      <section class="portfolio">
+        <h1 class="head">Featured Work</h1>
+        <ul class="list">
+          <li class="item">
+            <div class="preview"><img src="{% static 'img/portfolio/ezza-preview.png' %}">
+              <div class="link"><a href="http://ezzarose.com" target="_blank">ezzarose.com</a></div>
+            </div>
+            <div class="info">
+              <h2 class="name">Ezza Rose</h2>
+              <p>A site made for Portland musician Ezza Rose</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="preview"><img src="{% static 'img/portfolio/nkaza-preview.png' %}">
+              <div class="link"><a href="http://nkaza.lv11.co" target="_blank">nkaza.lv11.co</a></div>
+            </div>
+            <div class="info">
+              <h2 class="name">Nikhil Kaza</h2>
+              <p>A site made for Portland musician Ezza Rose</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="preview"><img src="{% static 'img/portfolio/ilc-preview.png' %}">
+              <div class="link"><a href="http://unc.lv11.co" target="_blank">unc.lv11.co</a></div>
+            </div>
+            <div class="info">
+              <h2 class="name">Industrial Land Conversion</h2>
+              <h3 class="client">University of North Carolina at Chapel Hill</h3>
+              <p>An app</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="preview"><img src="{% static 'img/portfolio/pineapple-preview.png' %}">
+              <div class="link"><a href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/" target="_blank">characterarcade.com</a></div>
+            </div>
+            <div class="info">
+              <p>A game</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="pre-footer"></div>
+    <footer id="footer"></footer>
+  </body>
+</html>

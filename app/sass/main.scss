@@ -8,12 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 @import "compass/reset";
-@import "susy";
-
-$total-columns  : 12;             // a 12-column grid
-$column-width   : 3.5em;            // each column is 4em wide
-$gutter-width   : 2em;            // 1em gutters between columns
-$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+@import "compass/utilities/general/clearfix";
 
 html, body {
 	font-family: 'Lato', sans-serif;
@@ -115,10 +110,10 @@ hr.diag {
 	background: #ffa;
 }
 
-.container {
-	@include container;
-	min-width: 800px;
-}
+// .container {
+// 	@include container;
+// 	min-width: 800px;
+// }
 
 @mixin dither($adj) {
 	background: url(/static/img/bg-dither-#{$adj}.png);
@@ -224,8 +219,8 @@ hr.diag {
 	.offerings {
 		ul {
 			li {
-				@include span-columns(3);
-				&:nth-child(4n) { @include omega; }
+				// @extend .col-md-4;
+				// &:nth-child(4n) { @include omega; }
 			}
 		}
 
@@ -235,11 +230,11 @@ hr.diag {
 
 		ul {
 			li {
-				@include span-columns(4);
+				// @extend .col-md-4;
 
-				&:nth-child(3n) {
-					@include omega;
-				}
+				// &:nth-child(3n) {
+				// 	@include omega;
+				// }
 				margin-bottom: 25px;
 
 				.preview {
@@ -300,11 +295,12 @@ hr.diag {
 					font-size: 0.8em;
 					text-align: left;
 				}
-				@include span-columns(2);
+				
+				// @extend .col-md-6;
 
-				&:nth-child(6n) {
-					@include omega;
-				}
+				// &:nth-child(6n) {
+				// 	@include omega;
+				// }
 
 			}
 		}
