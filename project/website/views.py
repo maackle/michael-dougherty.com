@@ -13,5 +13,5 @@ class MusicPageView(TemplateView):
 	template_name = 'music.jade'
 
 
-class ProjectPageView(TemplateView):
-	template_name = 'projects.jade'
+class CodePageView(TemplateView):
+	template_name = 'code.jade'
