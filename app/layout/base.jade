@@ -7,27 +7,27 @@ html
 
 		script(type="text/javascript", src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js")
 	body
+		#root
+			block navbar
+				.container
+					nav#navbar
+						ul.right
+							li.web
+								a(href="http://github.com/maackle", target="_blank") github
+							li.music
+								a(href="http://twitter.com/maackle", target="_blank") @maackle
+							li
+								span
+									img(src="/assets/img/nav-email.png")
+						ul
+							li.michael
+								a(href="/") Michael Dougherty
+					#post-header
 
-		block navbar
 			.container
-				nav#navbar
-					ul.right
-						li
-							span
-								img(src="/assets/img/nav-email.png")
-					ul
-						li.michael
-							a(href="/") Michael Dougherty
-						li.web
-							a(href="/web") websites
-						li.music
-							a music
-						li.code
-							a code
-				#post-header
-
-		.container
-			block content
-		block footer
-			#pre-footer
-			footer#footer
+				block content
+			#root_footer
+		#footer_container
+			block footer
+				#pre-footer
+				footer#footer

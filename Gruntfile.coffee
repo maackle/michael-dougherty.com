@@ -23,7 +23,7 @@ module.exports = (grunt) ->
 				files: ["<%= config.app %>/sass/*.{sass,scss}"]
 				tasks: ['compass']
 			jade:
-				files: ['<%= config.app %>/*.jade']
+				files: ['<%= config.app %>/{,**}/*.jade']
 				tasks: ['jade']
 
 		coffee:
