@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/michael/www/michaeldougherty.info",
+			"folder_exclude_patterns": [
+				".sass-cache",
+				"bower_components",
+				"node_modules",
+				"www"
+			]
+		}
+	]
+}

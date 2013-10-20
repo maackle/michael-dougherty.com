@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/css?family=Cherry+Swash:400,700)
+
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700)
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic)
+
+html, body
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  background: #f2f2f2
+  color: #666
+  height: 100%
+
+a:link, a:visited
+  text-decoration: none
+  color: #0aa
+  &:hover
+    text-decoration: none
+    background: #d0d
+    color: white
+
+p
+  margin: 0.5em auto
+  line-height: 1.25em
+  text-align: justify
+
+i, em
+  font-style: italic
+
+b, strong
+  font-weight: bold
+
+h1, h2, h3, h4
+  font-family: 'Inconsolata', serif
+  text-transform: uppercase
+  margin: 1em
+  clear: both
+  color: #111
+  // letter-spacing: -0.11em;
+
+h1
+  font-size: 2.5em
+
+h2
+  font-size: 1.67em
+
+h3
+  font-size: 1.5em
+
+h4
+  font-size: 1.33em
+
+hr
+  height: 1px
+  background: #000
+  border: 0
+  border-bottom: 1px solid #ddd
+
+span[title]
+  // display: inline-block;
+  border-bottom: 1px dashed black
+  cursor: help
+
+.diag-h2
+  background: url(/assets/img/bg-diagonal-black-8.png)
+  padding: 10px
+  display: inline-block
+  text-align: center
+  margin: inherit auto inherit
+  font-weight: bold
+  clear: both
+
+.diag-h3
+  background: url(/assets/img/bg-dither-black-12_5p.png) bottom left repeat-x
+  padding: 0 0 6px
+  // text-shadow: 2px 2px white;
+  // display: inline-block;
+  text-align: center
+  margin: 20px auto 0
+  color: #222
+  // font-weight: bold;
+  clear: both
+
+hr.diag
+  background: url(/assets/img/bg-diagonal-black-8.png)
+  height: 16px
+  width: 256px
+  border: 0
+  margin: 15px auto
+  clear: both
+
+.bigger
+  font-size: 1.1em
+
+.center
+  text-align: center
+
+.bg-yellow
+  background: #ffa
+
+// .container {
+// 	@include container;
+// 	min-width: 800px;
+// }
+
+=dither($adj)
+  background: url(/assets/img/bg-dither-#{$adj}.png)
+
+.item, .summary
+  &:hover
+    background: #fff
+    color: #333
+
+.dither-dark
+  +dither(dark)
+
+.dither-gray
+  +dither(gray)
+
+.dither-light
+  +dither(light)
+
+.dither-white
+  +dither(white)
+
+#navbar
+  font-family: 'Cherry Swash', sans-serif
+  font-size: 20px
+  ul
+    list-style: none
+    margin-bottom: 0
+    li
+      display: inline-block
+      a, span
+        display: inline-block
+        padding: 10px 20px
+      img
+        vertical-align: middle
+      &.michael
+        background: #888888 url(/assets/img/bg-dither-dark.png)
+        a
+          color: white
+    &.right
+      float: right
+  clear: both
+  +clearfix
+
+#stripes
+  min-height: 100%
+  ul
+    min-height: 100%
+    li
+      a
+        display: block
+        padding: 10px
+        width: 100%
+        height: 100%
+        line-height: 100%
+        font-size: 2em
+        font-style: italic
+      // &.code {
+      // 	background: #1FBED6;
+      // }
+      // &.music {
+      // 	background: #97C30A;
+      // }
+      // &.projects {
+      // 	background: #FF717E;
+      // }
+
+.page-web
+  section
+    margin: 30px 0
+    clear: both
+    +clearfix
+  .summary
+    margin: 30px auto
+    max-width: 800px
+    p
+      text-align: center
+      font-size: 1.1em
+      line-height: 1.5em
+  .offerings
+    .col
+      +make-md-column(3)
+      // @extend .col-md-4;
+      // &:nth-child(4n) { @include omega; }
+  .portfolio
+    .item
+      +make-md-column(4)
+      // @extend .col-md-4;
+      // &:nth-child(3n) {
+      // 	@include omega;
+      // }
+      margin-bottom: 25px
+      .preview
+        display: block
+        position: relative
+        img, .dummy-img
+          border-top: 3px double #333
+          border-bottom: 3px solid #333
+          width: 100%
+          max-width: 100%
+        .dummy-img
+          +dither(gray)
+          border: 0
+          padding: 29px 0
+        .name
+          margin: 0
+          color: black
+          text-shadow: 1px 1px 0 white
+          min-height: 2em
+          padding: 0 10px
+          +dither(gray)
+          &.dark
+            color: black
+            text-shadow: 1px 1px 0 white
+          &.light
+            color: white
+            text-shadow: 1px 1px 0 black
+      &.your-site
+        .info
+          font-size: 1.1em
+  .tools
+    .item
+      &:hover
+        background: #ffc
+        color: #222
+    ul
+      li
+        p
+          font-size: 0.8em
+          text-align: left
+        // @extend .col-md-6;
+        // &:nth-child(6n) {
+        // 	@include omega;
+        // }
+
+#post-header
+  height: 16px
+  background: url(/assets/img/bg-dither-black-12_5p.png)
+
+#pre-footer
+  height: 64px
+  background: url(/assets/img/bg-hatch-black-8.png)
+  background: url(/assets/img/bg-dither-black-12_5p.png)
+
+#footer
+  height: 90%
+  // background: #444 url(/assets/img/bg-hatch-black-8.png);
+  // background: #000 url(/assets/img/bg-dither-gray.png);
+  background: #777777 url(/assets/img/bg-dither-black-12_5p-negative.png)
+  // border-top: 1px solid #aaa;
