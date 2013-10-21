@@ -1,6 +1,7 @@
 title: Hello Hexo!
 date: 2013-10-20 17:58:57
 tags: hello
+categories: code
 ---
 
 After years of not having a blog, even though I totally should have had one, I do believe I've found my ideal blogging platform: [Hexo](http://zespia.tw/hexo).  I just discovered it today, and already am in love (this blog is powered by it).  I am writing this post while I install and deploy it, and want to capture my first impressions and kind of document the process for myself and for others.  But first, some description.
