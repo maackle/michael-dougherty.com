@@ -6,88 +6,58 @@ block content
 		h1.center(style="margin-top: 80px;") Michael builds websites!
 
 		.summary
-			p
-				| I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer and love to work on all kinds of projects.  
-				| I feel at home in a text editor and have dreams about code. 
-				a(href="#contact") Email me at the address below
-				|  and tell me about your project!
+			p.block.no-bg.bigger
+				| Hi, I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer living in Portland, OR.  
+				br
+				| I specialize in Django but have worked on 
+				//- a(href="#portfolio") 
+				| all kinds of sites 
+				| in 
+				//- a(href="#skills") 
+				| many languages
+				| .  
+				br
+				| (My favorite?  <em>Scala!</em>)
 
-		section.offerings
-			a(name="offerings")
-
-			h2.center
-				.diag-h2 What I do
-
-			.summary
-				p
-					| In short, I do it all.  I can perform all the rites and rituals necessary 
-					br
-					| to move your website from concept into reality, 
-					//- br
-					| either by myself or on a team.
-			
-			.row
-				.col.item
-					h3.diag-h3 Design & Planning
-					.info
-						p Form should follow function.  After determining the purpose of a site, I design with that purpose in mind.
-						p I tend towards clean, simple, usable designs.
-						p I often work with other designers with vastly different styles and have no problem bringing any vision to life.
-				.col.item
-					h3.diag-h3 Implementation
-					.info
-						p I have the front-end skills to realize any design, whether my own or another designer's.  I'm fluent in HTML, CSS and Javascript and always strive to stay abreast of the latest techniques and best practices.
-				.col.item
-					h3.diag-h3 Development
-					.info
-						p Development is my passion and forte.  I love writing code and have been doing it for over half of my life.  I studied Computer Science in grad school and have never stopped learning.  
-						p I often work alone, so my skills are well-rounded.  CMS integration, API architecture, database design, algorithms, you name it.  I'm willing and able to tackle just about any technical challenge.
-				.col
-					.item
-						h3.diag-h3 Consulting
-						.info
-							p I've been building websites and applications of all kinds for years.  I've run into, and overcome, many obstacles.  Let me share my experience and save you time.
-					.item
-						h3.diag-h3 Hosting
-						.info
-							p I can host your site for you or help it find a proper home.
+		.links.block-small
+			a(href="#portfolio") portfolio
+			a(href="#skills") skills
+			a(href="#contact") contact
 
 		section.portfolio
 			a(name="portfolio")
 
 			h2.center
-				.diag-h2 Recent Work
-			.row
-				.item
-					a(href="http://nkaza.lv11.co", target="_blank").preview
-						img(src="assets/img/portfolio/nkaza-phi.png")
-						h2.name nikhil kaza
-					.info
-						p Personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automatic bibliography generation.  Fully loaded!
-						p
-							i.bg-yellow currently in development
+				.diag-bg Recent Work
 
-				.item
-					a(href="http://", target="_blank").preview
+			.row
+
+				.item.col-md-4
+					a(href="http://www.grovemade.com/product/wood-print-case-for-iphone/customize/", target="_blank").preview
+						img(src="assets/img/portfolio/grove-preview.png")
+						h2.name Grove Wood Print Case Customizer
+					.info
+						p A collaboration with local badass <a href="http://yujitomita.com/">Yuji Tomita</a>, built for local iPhone case artisans <a href="http://grovemade.com">Grove</a>.  Users can import their instagram photos or upload images directly to be printed on a blank wooden iPhone case, adjusting the position and size with an easy drag-and-drop interface.  The app sends the final result directly to Grove for printing.  
+						p Try it out! (We're pretty proud of this one.)
+
+				.item.col-md-4
+					a(href="http://makingroomformanufacturing.org", target="_blank").preview
 						img(src="assets/img/portfolio/ilc-phi.png")
-						h2.name Land Conversion Visualization
+						h2.name Making Room for Manufacturing
 					.info
-						p An application built to supplement a research project at the University of North Carolina at Chapel Hill.  It is intended to be used by city planners.  It displays various helpful metrics about land parcels and calculates the probability of them being re-zoned.
+						p This site is the public-facing facet of an ongoing research project at University of North Carolina which seeks to explore the rapid deindustrialization of cities.  It features a custom-built layered map application which visualizes the data being researched alongside other related data.
 						p
 							i.bg-yellow currently in development
 
-				.item
-					a(href="http://ezzarose.com", target="_blank").preview
-						img(src="assets/img/portfolio/ezza-phi.png")
-						h2.name ezzarose.com
+				.item.col-md-4
+					a(href="http://sia.planning.unc.edu/", target="_blank").preview
+						img(src="assets/img/portfolio/nkaza-phi.png")
+						h2.name Nikhil Kaza
 					.info
-						p 
-							| A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate
-							a(href="http://campcreekrecords.com") Joe Hall
-							| .
-						p P.S. I'm a fan.
+						p Extremely customized personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automated bibliography generation.  Fully loaded!
+
 			.row
-				.item
+				.item.col-md-4
 					a(href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/", target="_blank").preview
 						img(src="assets/img/portfolio/pineapple-phi.png")
 						h2.name Find the Famous Pineapple
@@ -97,21 +67,32 @@ block content
 							a(href="http://thisispop.com", target="_blank") This Is Pop 
 							| and 
 							a(href="http://partlyhuman.com") partlyhuman, inc. 
-							| for USA Network's TV show
+							| for USA Network's TV show 
 							a(href="http://www.usanetwork.com/psych") Psych.
 						p 
 							| I designed and wrote the backend code.
 
-				.item
-					a(href="http://aedfineart.com", target="_blank").preview
-						img(src="assets/img/portfolio/duckler-phi.png")
-						h2.name aedfineart.com
+				.item.col-md-4
+					a(href="http://ezzarose.com", target="_blank").preview
+						img(src="assets/img/portfolio/ezza-phi.png")
+						h2.name ezzarose.com
 					.info
-						p A simple site designed to showcase a Portlander's private art collection
+						p 
+							| A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate
+							a(href="http://campcreekrecords.com") Joe Hall
+							| .
+						p P.S. I'm a fan.
+
+				//- .item
+				//- 	a(href="http://aedfineart.com", target="_blank").preview
+				//- 		img(src="assets/img/portfolio/duckler-phi.png")
+				//- 		h2.name aedfineart.com
+				//- 	.info
+				//- 		p A simple site designed to showcase a Portlander's private art collection
 
 
 
-				.item.your-site
+				.item.your-site.col-md-4
 					a(href="#contact", target="_blank").preview
 						img.dummy-img(src="assets/img/portfolio/blank-phi.png")
 						h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
@@ -128,43 +109,91 @@ block content
 								| to discuss your website.
 
 
-		//- section.tools
 
-		//- 	h2.center
-		//- 		.diag-h2 Tools used
+		section.skills
+			a(name="skills")
 
-		//- 	.summary
-		//- 		p
-		//- 			| As a developer, I like collecting tools and am constantly searching for the best tools for the job.  
-		//- 			br
-		//- 			| Here's a rundown of my favorite software and why I use them in my projects.
+			h2.center
+				.diag-bg EXPERTISE
+
+			.summary
+				p.block
+					| I made my first webpage in 8th grade, which featured a looping background MIDI 
+					br
+					| and a scrolling <code>&lt;marquee&gt;</code>.
+					br
+					| I went pro in 2009, and have been freelancing ever since.
+					br
+					| I've learned a lot throughout the years!
 			
-		//- 	ul
-		//- 		li.item
-		//- 			h3.diag-h3
-		//- 				a(href="http://djangoproject.com") Django
-		//- 		li.item
-		//- 			h3.diag-h3
-		//- 				a(href="http://playframework.com") Play 2
-		//- 		li.item
-		//- 			h3.diag-h3
-		//- 				a(href="http://playframework.com") Sass
-		//- 		li.item
-		//- 			a(href="djangoproject.com") Django
-		//- 		li.item
-		//- 			a(href="djangoproject.com") Django
+			.row
+				.col-md-4.item
+					h3.diag-line Frontend
+					.info
+						p.center I eat this stuff for breakfast.
+						h4.block-tiny.no-bg Languages:
+						.block-tiny HTML5
+						.block-tiny CSS3
+						.block-tiny Javascript
+						.block-tiny SVG
+						br
+						h4.block-tiny.no-bg Templating:
+						.block-tiny Jade
+						.block-tiny Sass
+						.block-tiny CoffeeScript
+						br
+						h4.block-tiny.no-bg Workflow:
+						.block-tiny grunt
+						.block-tiny bower
+				.col-md-4.item
+					h3.diag-line Backend
+					.info
+						p.center Different jobs call for different tools, so I regularly use a variety of stacks.
+						h4.block-tiny.no-bg Main:
+						.block-tiny Python + Django
+						.block-tiny PostgreSQL
+						//- .block-tiny nginx
+						.block-tiny gunicorn
+						br
+						h4.block-tiny.no-bg.bare LAMP: 
+						.block-tiny PHP
+						.block-tiny MySQL
+						.block-tiny Apache
+						.block-tiny Laravel
+						.block-tiny Lemonstand
+						.block-tiny Wordpress
+						br
+						h4.block-tiny.no-bg.bare Prototyping:
+						.block-tiny Node.js
+						.block-tiny Express.js
+						br
+						h4.block-tiny.no-bg.bare Fun:
+						.block-tiny Scala
+						.block-tiny Play! 2
+						.block-tiny Scalatra
+				.col-md-4.item
+					h3.diag-line Tools
+					.info
+						p I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally with all of these.
+						.block-tiny git
+						.block-tiny jQuery
+						.block-tiny d3
+						.block-tiny underscore.js
+						.block-tiny async.js
+						.block-tiny backbone.js
+						.block-tiny Twitter Bootstrap
+						.block-tiny Zurb Foundation
+
 
 		section.contact
 			a(name="contact")
 
 			h2.center
-				.diag-h2 Contact Info
+				.diag-bg Contact Info
 
 			.summary
-				p Rather than fill out some stodgy old contact form, why not just email me? 
-				p
-					img(src="/assets/img/email.png")
-				p 
-					| I live in beautiful Portland, Oregon at the base of Mt. Tabor.
-					br
-					| Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)
+				.block
+					p Rather than fill out some stodgy old contact form, why not just email me? 
+					p
+						a(href="mailto:michael@lv11.co").bg-yellow MICHAEL@LV11.CO
+					p Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)

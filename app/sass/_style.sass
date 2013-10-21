@@ -6,6 +6,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic)
 
+$link-color: #42adad
+
 html, body
   font-family: 'Lato', sans-serif
   font-size: 16px
@@ -13,12 +15,15 @@ html, body
   color: #666
   height: 100%
 
-a:link, a:visited
+.container 
+  min-width: 630px
+
+a:link, a:visited, .link
   text-decoration: none
-  color: #0aa
+  color: $link-color
   &:hover
     text-decoration: none
-    background: #d0d
+    background-color: #d0d
     color: white
 
 p
@@ -35,7 +40,7 @@ b, strong
 h1, h2, h3, h4
   font-family: 'Inconsolata', serif
   text-transform: uppercase
-  margin: 1em
+  margin: 0.5em
   clear: both
   color: #111
   // letter-spacing: -0.11em;
@@ -50,7 +55,18 @@ h3
   font-size: 1.5em
 
 h4
-  font-size: 1.33em
+  font-size: 1.2em
+
+.mw-200
+  min-width: 200px
+
+.bare
+  line-height: 1.0em
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+
+.no-bg
+  background: none !important
 
 hr
   height: 1px
@@ -63,8 +79,8 @@ span[title]
   border-bottom: 1px dashed black
   cursor: help
 
-.diag-h2
-  background: url(/assets/img/bg-diagonal-black-8.png)
+.diag-bg
+  background: url(/assets/img/bg-diagonal-black-8-a25.png)
   padding: 10px
   display: inline-block
   text-align: center
@@ -72,7 +88,7 @@ span[title]
   font-weight: bold
   clear: both
 
-.diag-h3
+.diag-line
   background: url(/assets/img/bg-dither-black-12_5p.png) bottom left repeat-x
   padding: 0 0 6px
   // text-shadow: 2px 2px white;
@@ -91,11 +107,30 @@ hr.diag
   margin: 15px auto
   clear: both
 
-.bigger
+.inline
+  display: inline-block
+
+.small
+  font-size: 0.9em
+  
+.smaller
+  font-size: 0.75em
+
+.big
   font-size: 1.1em
 
+.bigger
+  font-size: 1.25em
+
+.left
+  text-align: left
 .center
   text-align: center
+.right
+  text-align: right
+
+.underline
+  text-decoration: underline
 
 .bg-yellow
   background: #ffa
@@ -110,8 +145,10 @@ hr.diag
 
 .item, .summary
   &:hover
-    background: #fff
     color: #333
+
+.dither-black
+  background: #888888 url(/assets/img/bg-dither-dark.png)
 
 .dither-dark
   +dither(dark)
@@ -135,15 +172,23 @@ hr.diag
       display: inline-block
       a, span
         display: inline-block
-        padding: 10px 20px
+        padding: 5px 15px
+        margin: 0
+      a
+        color: #222
       img
         vertical-align: middle
-      &.michael
+      &.dither
         background: #888888 url(/assets/img/bg-dither-dark.png)
+        color: white
         a
           color: white
     &.right
+      vertical-align: bottom
       float: right
+      // font-size: 12px
+      // a, span
+      //   padding: 10px 8px
   clear: both
   +clearfix
 
@@ -169,41 +214,74 @@ hr.diag
       // &.projects {
       // 	background: #FF717E;
       // }
+
+.block
+  text-align: center
+  background: #fff
+  border: 1px solid #e2e2e2
+  // box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2)
+  padding: 30px
+  margin: 15px
+  display: inline-block
+  a
+    display: inline-block
+
+.block-small
+  @extend .block
+  text-align: left
+  padding: 10px
+  margin: 8px
+  display: block
+
+.block-tiny
+  @extend .block
+  // text-align: left
+  padding: 3px
+  margin: 1px
+  display: inline-block
+
 .page-index
   text-align: center
   .block
-    font-size: 1.25em
-    text-align: center
-    background: #fff
-    padding: 30px
-    margin: 15px
-    display: inline-block
+    @extend .bigger
+
 
 .page-web
-  section
-    margin: 30px 0
+  section, .section
+    margin: 60px 0
     clear: both
     +clearfix
+  .links
+    text-align: center
+    a
+      @extend h4
+      @extend .diag-line
+      @extend .link
+      color: $link-color
+      display: inline-block
+      padding: 10px
+      margin: 0 45px
   .summary
-    margin: 30px auto
+    text-align: center
+    margin: 0 auto
     max-width: 800px
     p
       text-align: center
       font-size: 1.1em
-      line-height: 1.5em
-  .offerings
-    .col
-      +make-md-column(3)
-      // @extend .col-md-4;
-      // &:nth-child(4n) { @include omega; }
+      line-height: 1.75em
+  .skills
+    .info
+      text-align: left
+
   .portfolio
     .item
-      +make-md-column(4)
       // @extend .col-md-4;
       // &:nth-child(3n) {
       // 	@include omega;
       // }
-      margin-bottom: 25px
+      max-width: 400px
+      margin: 20px auto 20px
+      padding-bottom: 20px
       .preview
         display: block
         position: relative

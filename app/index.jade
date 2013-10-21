@@ -3,13 +3,28 @@ extends layout/base
 block content
 	.page-index
 
-		h1 hi!
-		.block I'm a freelance web developer living in Portland, OR.  <a href="/web.html">See my work.</a>
+		h1
+			.diag-bg Hi!
+		.block I'm a freelance web developer living in Portland, OR.  <a href="/web.html">Check out my work</a>.
 		br
-		.block I make <a href="/games/starfruit-ascension">games</a>.
-		.block I play bass in <a href="http://maxribnerband.com">a band</a>.
+		.block I make <a href="/games/starfruit-ascension">games</a>,
+		.block I play bass in <a href="http://maxribnerband.com">a band</a>,
+		.block and I recently started a <a href="/blog">blog</a>.
 		br
-		.block 
-			| I will eventually have a blog.
-			br
-			p(style="font-size: 0.8em; text-align: center;") (And a more complete website)
+		
+		
+		.block
+			h4.diag-bg(style="font-weight: normal;") Connect with me on the internet
+			.row
+				.col-md-4.mw-200
+					h4.diag-line.inline github
+					br
+					a(href="http://github.com/maackle", target="_blank") maackle
+				.col-md-4.mw-200
+					h4.diag-line.inline email 
+					br
+					a(href="mailto:michael@lv11.co", target="_blank") michael@lv11.co
+				.col-md-4.mw-200
+					h4.diag-line.inline twitter
+					br
+					a(href="http://twitter.com/maackle", target="_blank") @maackle

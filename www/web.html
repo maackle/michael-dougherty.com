@@ -10,12 +10,12 @@
       <div class="container">
         <nav id="navbar">
           <ul class="right">
-            <li class="web"><a href="http://github.com/maackle" target="_blank">github</a></li>
-            <li class="music"><a href="http://twitter.com/maackle" target="_blank">@maackle</a></li>
-            <li><span><img src="/assets/img/nav-email.png"></span></li>
+            <li class="dither-light"><a href="mailto:michael@lv11.co">michael@lv11.co</a></li>
           </ul>
           <ul>
-            <li class="michael"><a href="/">Michael Dougherty</a></li>
+            <li class="dither-black"><a href="/" style="color: white;">Michael Dougherty</a></li>
+            <li class="dither-light"><a href="/blog">blog</a></li>
+            <li class="dither-light"><a href="/web.html">websites</a></li>
           </ul>
         </nav>
         <div id="post-header"></div>
@@ -24,77 +24,53 @@
         <div class="page-web">
           <h1 style="margin-top: 80px;" class="center">Michael builds websites!</h1>
           <div class="summary">
-            <p>
-              I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer and love to work on all kinds of projects.  
-              I feel at home in a text editor and have dreams about code. <a href="#contact">Email me at the address below</a> and tell me about your project!
+            <p class="block no-bg bigger">Hi, I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer living in Portland, OR.  <br>I specialize in Django but have worked on all kinds of sites 
+              in many languages
+              .  <br>(My favorite?  <em>Scala!</em>)
             </p>
           </div>
-          <section class="offerings"><a name="offerings"></a>
-            <h2 class="center">
-              <div class="diag-h2">What I do</div>
-            </h2>
-            <div class="summary">
-              <p>In short, I do it all.  I can perform all the rites and rituals necessary <br>to move your website from concept into reality, either by myself or on a team.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col item">
-                <h3 class="diag-h3">Design & Planning</h3>
-                <div class="info">
-                  <p>Form should follow function.  After determining the purpose of a site, I design with that purpose in mind.</p>
-                  <p>I tend towards clean, simple, usable designs.</p>
-                  <p>I often work with other designers with vastly different styles and have no problem bringing any vision to life.</p>
-                </div>
-              </div>
-              <div class="col item">
-                <h3 class="diag-h3">Implementation</h3>
-                <div class="info">
-                  <p>I have the front-end skills to realize any design, whether my own or another designer's.  I'm fluent in HTML, CSS and Javascript and always strive to stay abreast of the latest techniques and best practices.</p>
-                </div>
-              </div>
-              <div class="col item">
-                <h3 class="diag-h3">Development</h3>
-                <div class="info">
-                  <p>Development is my passion and forte.  I love writing code and have been doing it for over half of my life.  I studied Computer Science in grad school and have never stopped learning.  </p>
-                  <p>I often work alone, so my skills are well-rounded.  CMS integration, API architecture, database design, algorithms, you name it.  I'm willing and able to tackle just about any technical challenge.</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="item">
-                  <h3 class="diag-h3">Consulting</h3>
-                  <div class="info">
-                    <p>I've been building websites and applications of all kinds for years.  I've run into, and overcome, many obstacles.  Let me share my experience and save you time.</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <h3 class="diag-h3">Hosting</h3>
-                  <div class="info">
-                    <p>I can host your site for you or help it find a proper home.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <div class="links block-small"><a href="#portfolio">portfolio</a><a href="#skills">skills</a><a href="#contact">contact</a></div>
           <section class="portfolio"><a name="portfolio"></a>
             <h2 class="center">
-              <div class="diag-h2">Recent Work</div>
+              <div class="diag-bg">Recent Work</div>
             </h2>
             <div class="row">
-              <div class="item"><a href="http://nkaza.lv11.co" target="_blank" class="preview"><img src="assets/img/portfolio/nkaza-phi.png">
-                  <h2 class="name">nikhil kaza</h2></a>
+              <div class="item col-md-4"><a href="http://www.grovemade.com/product/wood-print-case-for-iphone/customize/" target="_blank" class="preview"><img src="assets/img/portfolio/grove-preview.png">
+                  <h2 class="name">Grove Wood Print Case Customizer</h2></a>
                 <div class="info">
-                  <p>Personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automatic bibliography generation.  Fully loaded!</p>
+                  <p>A collaboration with local badass <a href="http://yujitomita.com/">Yuji Tomita</a>, built for local iPhone case artisans <a href="http://grovemade.com">Grove</a>.  Users can import their instagram photos or upload images directly to be printed on a blank wooden iPhone case, adjusting the position and size with an easy drag-and-drop interface.  The app sends the final result directly to Grove for printing.  </p>
+                  <p>Try it out! (We're pretty proud of this one.)</p>
+                </div>
+              </div>
+              <div class="item col-md-4"><a href="http://makingroomformanufacturing.org" target="_blank" class="preview"><img src="assets/img/portfolio/ilc-phi.png">
+                  <h2 class="name">Making Room for Manufacturing</h2></a>
+                <div class="info">
+                  <p>This site is the public-facing facet of an ongoing research project at University of North Carolina which seeks to explore the rapid deindustrialization of cities.  It features a custom-built layered map application which visualizes the data being researched alongside other related data.</p>
                   <p><i class="bg-yellow">currently in development</i></p>
                 </div>
               </div>
-              <div class="item"><a href="http://" target="_blank" class="preview"><img src="assets/img/portfolio/ilc-phi.png">
-                  <h2 class="name">Land Conversion Visualization</h2></a>
+              <div class="item col-md-4"><a href="http://sia.planning.unc.edu/" target="_blank" class="preview"><img src="assets/img/portfolio/nkaza-phi.png">
+                  <h2 class="name">Nikhil Kaza</h2></a>
                 <div class="info">
-                  <p>An application built to supplement a research project at the University of North Carolina at Chapel Hill.  It is intended to be used by city planners.  It displays various helpful metrics about land parcels and calculates the probability of them being re-zoned.</p>
-                  <p><i class="bg-yellow">currently in development</i></p>
+                  <p>Extremely customized personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automated bibliography generation.  Fully loaded!</p>
                 </div>
               </div>
-              <div class="item"><a href="http://ezzarose.com" target="_blank" class="preview"><img src="assets/img/portfolio/ezza-phi.png">
+            </div>
+            <div class="row">
+              <div class="item col-md-4"><a href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/" target="_blank" class="preview"><img src="assets/img/portfolio/pineapple-phi.png">
+                  <h2 class="name">Find the Famous Pineapple</h2></a>
+                <div class="info">
+                  <p>
+                     
+                    A game developed in conjunction with <a href="http://thisispop.com" target="_blank">This Is Pop </a>and <a href="http://partlyhuman.com">partlyhuman, inc. </a>for USA Network's TV show <a href="http://www.usanetwork.com/psych">Psych.</a>
+                  </p>
+                  <p>
+                     
+                    I designed and wrote the backend code.
+                  </p>
+                </div>
+              </div>
+              <div class="item col-md-4"><a href="http://ezzarose.com" target="_blank" class="preview"><img src="assets/img/portfolio/ezza-phi.png">
                   <h2 class="name">ezzarose.com</h2></a>
                 <div class="info">
                   <p>
@@ -104,28 +80,7 @@
                   <p>P.S. I'm a fan.</p>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="item"><a href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/" target="_blank" class="preview"><img src="assets/img/portfolio/pineapple-phi.png">
-                  <h2 class="name">Find the Famous Pineapple</h2></a>
-                <div class="info">
-                  <p>
-                     
-                    A game developed in conjunction with <a href="http://thisispop.com" target="_blank">This Is Pop </a>and <a href="http://partlyhuman.com">partlyhuman, inc. </a>for USA Network's TV show<a href="http://www.usanetwork.com/psych">Psych.</a>
-                  </p>
-                  <p>
-                     
-                    I designed and wrote the backend code.
-                  </p>
-                </div>
-              </div>
-              <div class="item"><a href="http://aedfineart.com" target="_blank" class="preview"><img src="assets/img/portfolio/duckler-phi.png">
-                  <h2 class="name">aedfineart.com</h2></a>
-                <div class="info">
-                  <p>A simple site designed to showcase a Portlander's private art collection</p>
-                </div>
-              </div>
-              <div class="item your-site"><a href="#contact" target="_blank" class="preview"><img src="assets/img/portfolio/blank-phi.png" class="dummy-img">
+              <div class="item your-site col-md-4"><a href="#contact" target="_blank" class="preview"><img src="assets/img/portfolio/blank-phi.png" class="dummy-img">
                   <h2 style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black" class="dark">
                      
                     YOUR <br>SITE?
@@ -139,17 +94,82 @@
               </div>
             </div>
           </section>
-          <section class="contact"><a name="contact"></a>
+          <section class="skills"><a name="skills"></a>
             <h2 class="center">
-              <div class="diag-h2">Contact Info</div>
+              <div class="diag-bg">EXPERTISE</div>
             </h2>
             <div class="summary">
-              <p>Rather than fill out some stodgy old contact form, why not just email me? </p>
-              <p><img src="/assets/img/email.png"></p>
-              <p>
-                 
-                I live in beautiful Portland, Oregon at the base of Mt. Tabor.<br>Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)
-              </p>
+              <p class="block">I made my first webpage in 8th grade, which featured a looping background MIDI <br>and a scrolling <code>&lt;marquee&gt;</code>.<br>I went pro in 2009, and have been freelancing ever since.<br>I've learned a lot throughout the years!</p>
+            </div>
+            <div class="row">
+              <div class="col-md-4 item">
+                <h3 class="diag-line">Frontend</h3>
+                <div class="info">
+                  <p class="center">I eat this stuff for breakfast.</p>
+                  <h4 class="block-tiny no-bg">Languages:</h4>
+                  <div class="block-tiny">HTML5</div>
+                  <div class="block-tiny">CSS3</div>
+                  <div class="block-tiny">Javascript</div>
+                  <div class="block-tiny">SVG</div><br>
+                  <h4 class="block-tiny no-bg">Templating:</h4>
+                  <div class="block-tiny">Jade</div>
+                  <div class="block-tiny">Sass</div>
+                  <div class="block-tiny">CoffeeScript</div><br>
+                  <h4 class="block-tiny no-bg">Workflow:</h4>
+                  <div class="block-tiny">grunt</div>
+                  <div class="block-tiny">bower</div>
+                </div>
+              </div>
+              <div class="col-md-4 item">
+                <h3 class="diag-line">Backend</h3>
+                <div class="info">
+                  <p class="center">Different jobs call for different tools, so I regularly use a variety of stacks.</p>
+                  <h4 class="block-tiny no-bg">Main:</h4>
+                  <div class="block-tiny">Python + Django</div>
+                  <div class="block-tiny">PostgreSQL</div>
+                  <div class="block-tiny">gunicorn</div><br>
+                  <h4 class="block-tiny no-bg bare">LAMP: </h4>
+                  <div class="block-tiny">PHP</div>
+                  <div class="block-tiny">MySQL</div>
+                  <div class="block-tiny">Apache</div>
+                  <div class="block-tiny">Laravel</div>
+                  <div class="block-tiny">Lemonstand</div>
+                  <div class="block-tiny">Wordpress</div><br>
+                  <h4 class="block-tiny no-bg bare">Prototyping:</h4>
+                  <div class="block-tiny">Node.js</div>
+                  <div class="block-tiny">Express.js</div><br>
+                  <h4 class="block-tiny no-bg bare">Fun:</h4>
+                  <div class="block-tiny">Scala</div>
+                  <div class="block-tiny">Play! 2</div>
+                  <div class="block-tiny">Scalatra</div>
+                </div>
+              </div>
+              <div class="col-md-4 item">
+                <h3 class="diag-line">Tools</h3>
+                <div class="info">
+                  <p>I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally with all of these.</p>
+                  <div class="block-tiny">git</div>
+                  <div class="block-tiny">jQuery</div>
+                  <div class="block-tiny">d3</div>
+                  <div class="block-tiny">underscore.js</div>
+                  <div class="block-tiny">async.js</div>
+                  <div class="block-tiny">backbone.js</div>
+                  <div class="block-tiny">Twitter Bootstrap</div>
+                  <div class="block-tiny">Zurb Foundation</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="contact"><a name="contact"></a>
+            <h2 class="center">
+              <div class="diag-bg">Contact Info</div>
+            </h2>
+            <div class="summary">
+              <div class="block">
+                <p>Rather than fill out some stodgy old contact form, why not just email me? </p>
+                <p><a href="mailto:michael@lv11.co" class="bg-yellow">MICHAEL@LV11.CO</a></p>
+                <p>Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)</p>
+              </div>
             </div>
           </section>
         </div>
