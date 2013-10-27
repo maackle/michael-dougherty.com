@@ -3,27 +3,30 @@
 html
 	head
 		link(rel="stylesheet", href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css")
-		link(rel="stylesheet", href="/assets/stylesheets/manifest.css")
+		link(rel="stylesheet", href="/assets/styles/manifest.css")
 
+		script(type="text/javascript", src="/assets/bower_components/jquery/jquery.min.js")
 		script(type="text/javascript", src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js")
+		script(type="text/javascript", src="/assets/scripts/main.js")
 	body
 		#root
 			block navbar
-				.container
-					nav#navbar
-						ul.right
-							//- li
-							//- 	span email:
-							li.dither-light
-								a(href="mailto:michael@lv11.co") michael@lv11.co
-						ul
-							li.dither-black
-								a(href="/", style="color: white;") Michael Dougherty
-							li.dither-light
-								a(href="/blog") blog
-							li.dither-light
-								a(href="/web.html") websites
-					#post-header
+				.fixed
+					.container
+						nav#navbar
+							ul.right
+								//- li
+								//- 	span email:
+								li.dither-light
+									a(href="mailto:michael@lv11.co") michael@lv11.co
+							ul
+								li.dither-black
+									a(href="/", style="color: white;") Michael Dougherty
+								li.dither-light
+									a(href="/blog") blog
+								li.dither-light
+									a(href="/web.html") websites
+						#post-header
 
 			.container
 				block content

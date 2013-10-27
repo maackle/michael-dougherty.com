@@ -20,9 +20,9 @@ block content
 				| (My favorite?  <em>Scala!</em>)
 
 		.links.block-small
-			a(href="#portfolio") portfolio
-			a(href="#skills") skills
-			a(href="#contact") contact
+			a(href="#portfolio", class="smooth-anchor") portfolio
+			a(href="#skills", class="smooth-anchor") skills
+			a(href="#contact", class="smooth-anchor") contact
 
 		section.portfolio
 			a(name="portfolio")
@@ -72,16 +72,16 @@ block content
 						p 
 							| I designed and wrote the backend code.
 
-				.item.col-md-4
-					a(href="http://ezzarose.com", target="_blank").preview
-						img(src="assets/img/portfolio/ezza-phi.png")
-						h2.name ezzarose.com
-					.info
-						p 
-							| A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate 
-							a(href="http://campcreekrecords.com") Joe Hall
-							| .
-						p P.S. I'm a fan.
+				//- .item.col-md-4
+				//- 	a(href="http://ezzarose.com", target="_blank").preview
+				//- 		img(src="assets/img/portfolio/ezza-phi.png")
+				//- 		h2.name ezzarose.com
+				//- 	.info
+				//- 		p 
+				//- 			| A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate 
+				//- 			a(href="http://campcreekrecords.com") Joe Hall
+				//- 			| .
+				//- 		p P.S. I'm a fan.
 
 				.item.col-md-4
 					a(href="http://aedfineart.com", target="_blank").preview
@@ -90,21 +90,21 @@ block content
 					.info
 						p A minimal site designed to showcase a Portlander's private art collection
 
-				//- .item.your-site.col-md-4
-				//- 	a(href="#contact", target="_blank").preview
-				//- 		img.dummy-img(src="assets/img/portfolio/blank-phi.png")
-				//- 		h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
-				//- 			| YOUR 
-				//- 			br
-				//- 			| SITE?
-				//- 	.info
-				//- 		p 
-				//- 			em 
-				//- 				| This could be you!
-				//- 		p
-				//- 			em
-				//- 				a(href="#contact") Contact me 
-				//- 				| to discuss your website.
+				.item.your-site.col-md-4
+					a(href="#contact", target="_blank").preview
+						img.dummy-img(src="assets/img/portfolio/blank-phi.png")
+						h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
+							| YOUR 
+							br
+							| SITE?
+					.info
+						p 
+							em 
+								| This could be you!
+						p
+							em
+								a(href="#contact") Contact me 
+								| to discuss your website.
 
 
 
@@ -172,7 +172,7 @@ block content
 				.col-md-4.item
 					h3.diag-line Tools
 					.info
-						p I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally with all of these.
+						p I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally at some point with all of these.
 						.block-tiny git
 						.block-tiny jQuery
 						.block-tiny d3

@@ -31,15 +31,15 @@ module.exports = (grunt) ->
 				join: true
 			compile:
 				files:
-					"<%= config.dist %>/assets/javascripts/main.js": [
-						"<%= config.app %>/coffee/main.coffee",
+					"<%= config.dist %>/assets/scripts/main.js": [
+						"<%= config.app %>/coffee/*.coffee",
 					] # // compile and concat into single file
 
 		compass:
 			dist:
 				options:
 					sassDir: "<%= config.app %>/sass/",
-					cssDir: "<%= config.dist %>/assets/stylesheets/",
+					cssDir: "<%= config.dist %>/assets/styles/",
 					environment: 'production'
 
 		jade: {

@@ -7,11 +7,12 @@
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic)
 
 $link-color: #42adad
+$bg-color: #efefef
 
 html, body
   font-family: 'Lato', sans-serif
   font-size: 16px
-  background: #efefef
+  background: $bg-color
   color: #666
   height: 100%
 
@@ -161,6 +162,13 @@ hr.diag
 
 .dither-white
   +dither(white)
+
+
+.fixed
+  position: fixed
+  width: 100%
+  z-index: 100
+  background: rgba($bg-color, 0.9)
 
 #navbar
   font-family: 'Cherry Swash', sans-serif

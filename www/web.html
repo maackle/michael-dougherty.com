@@ -2,23 +2,27 @@
 <html>
   <head>
     <link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/stylesheets/manifest.css">
+    <link rel="stylesheet" href="/assets/styles/manifest.css">
+    <script type="text/javascript" src="/assets/bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/main.js"></script>
   </head>
   <body>
     <div id="root">
-      <div class="container">
-        <nav id="navbar">
-          <ul class="right">
-            <li class="dither-light"><a href="mailto:michael@lv11.co">michael@lv11.co</a></li>
-          </ul>
-          <ul>
-            <li class="dither-black"><a href="/" style="color: white;">Michael Dougherty</a></li>
-            <li class="dither-light"><a href="/blog">blog</a></li>
-            <li class="dither-light"><a href="/web.html">websites</a></li>
-          </ul>
-        </nav>
-        <div id="post-header"></div>
+      <div class="fixed">
+        <div class="container">
+          <nav id="navbar">
+            <ul class="right">
+              <li class="dither-light"><a href="mailto:michael@lv11.co">michael@lv11.co</a></li>
+            </ul>
+            <ul>
+              <li class="dither-black"><a href="/" style="color: white;">Michael Dougherty</a></li>
+              <li class="dither-light"><a href="/blog">blog</a></li>
+              <li class="dither-light"><a href="/web.html">websites</a></li>
+            </ul>
+          </nav>
+          <div id="post-header"></div>
+        </div>
       </div>
       <div class="container">
         <div class="page-web">
@@ -29,7 +33,7 @@
               .  <br>(My favorite?  <em>Scala!</em>)
             </p>
           </div>
-          <div class="links block-small"><a href="#portfolio">portfolio</a><a href="#skills">skills</a><a href="#contact">contact</a></div>
+          <div class="links block-small"><a href="#portfolio" class="smooth-anchor">portfolio</a><a href="#skills" class="smooth-anchor">skills</a><a href="#contact" class="smooth-anchor">contact</a></div>
           <section class="portfolio"><a name="portfolio"></a>
             <h2 class="center">
               <div class="diag-bg">Recent Work</div>
@@ -70,20 +74,22 @@
                   </p>
                 </div>
               </div>
-              <div class="item col-md-4"><a href="http://ezzarose.com" target="_blank" class="preview"><img src="assets/img/portfolio/ezza-phi.png">
-                  <h2 class="name">ezzarose.com</h2></a>
-                <div class="info">
-                  <p>
-                     
-                    A site developed for Portland musician Ezza Rose.  Ezza conceptualized the design and I coded it with my friend and fellow bandmate <a href="http://campcreekrecords.com">Joe Hall</a>.
-                  </p>
-                  <p>P.S. I'm a fan.</p>
-                </div>
-              </div>
               <div class="item col-md-4"><a href="http://aedfineart.com" target="_blank" class="preview"><img src="assets/img/portfolio/duckler-phi.png">
                   <h2 class="name">aedfineart.com</h2></a>
                 <div class="info">
                   <p>A minimal site designed to showcase a Portlander's private art collection</p>
+                </div>
+              </div>
+              <div class="item your-site col-md-4"><a href="#contact" target="_blank" class="preview"><img src="assets/img/portfolio/blank-phi.png" class="dummy-img">
+                  <h2 style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black" class="dark">
+                     
+                    YOUR <br>SITE?
+                  </h2></a>
+                <div class="info">
+                  <p> <em>
+                       
+                      This could be you!</em></p>
+                  <p><em><a href="#contact">Contact me </a>to discuss your website.</em></p>
                 </div>
               </div>
             </div>
@@ -141,7 +147,7 @@
               <div class="col-md-4 item">
                 <h3 class="diag-line">Tools</h3>
                 <div class="info">
-                  <p>I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally with all of these.</p>
+                  <p>I've built a lot of sites with specific needs and have used some amazing tools along the way.  I've worked on something professionally at some point with all of these.</p>
                   <div class="block-tiny">git</div>
                   <div class="block-tiny">jQuery</div>
                   <div class="block-tiny">d3</div>
