@@ -11,22 +11,23 @@ html
 	body
 		#root
 			block navbar
-				.fixed
-					.container
-						nav#navbar
-							ul.right
-								//- li
-								//- 	span email:
-								li.dither-light
-									a(href="mailto:michael@lv11.co") michael@lv11.co
-							ul
-								li.dither-black
-									a(href="/", style="color: white;") Michael Dougherty
-								li.dither-light
-									a(href="/blog") blog
-								li.dither-light
-									a(href="/web.html") websites
-						#post-header
+				.fixed-container(style="height: 55px;")
+					.fixed
+						.container
+							nav#navbar
+								ul.right
+									//- li
+									//- 	span email:
+									li.dither-light
+										a(href="mailto:michael@lv11.co") michael@lv11.co
+								ul
+									li.dither-black
+										a(href="/", style="color: white;") Michael Dougherty
+									li.dither-light
+										a(href="/blog") blog
+									li.dither-light
+										a(href="/web.html") websites
+							#post-header
 
 			.container
 				block content
