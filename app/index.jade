@@ -1,5 +1,7 @@
 extends layout/base
 
+include mixins
+
 block content
 	.page-index
 
@@ -12,20 +14,6 @@ block content
 		.block and I recently started a <a href="/blog">blog</a>.
 		br
 		
-		.block
-			h4.diag-bg(style="font-weight: normal;") Connect with me on the internet
-			table.center(style="margin: auto;")
-				mixin contact-line(text, link, name)
-					tr
-						td.right
-							h4.inline
-								span.dither-light #{text}
-						td
-							a(href=link, target="_blank").dither #{name}
-
-				+contact-line('email', "mailto:michael@lv11.co", 'michael@lv11.co')
-				+contact-line('github', "http://github.com/maackle", 'maackle')
-				+contact-line('linkedin', "http://linkedin.com/in/michael1111", 'michael1111')
-				+contact-line('twitter', "http://twitter.com/maackle", '@maackle')
+		+contact-info-block("Connect with me on the internet")
 			
 				

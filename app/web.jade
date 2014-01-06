@@ -9,14 +9,7 @@ block content
 			p.block.no-bg.bigger
 				| Hi, I'm a freelance <span title="One with expertise at every layer of web development, from front-end to back-end and everything inbetween.">full-stack</span> web developer living in Portland, OR.  
 				br
-				| I specialize in Django but have worked on 
-				//- a(href="#portfolio") 
-				| all kinds of sites 
-				| in 
-				//- a(href="#skills") 
-				| many languages
-				| .  
-				br
+				| I specialize in Django but work in many languages. 
 				| (My favorite?  <em>Scala!</em>)
 
 		.links.block-small
@@ -41,6 +34,14 @@ block content
 						p Try it out! (We're pretty proud of this one.)
 
 				.item.col-md-4
+					a(href="http://www.bavsound.com/", target="_blank").preview
+						img(src="assets/img/portfolio/bavsound-phi.png")
+						h2.name BAVSOUND<br/>BMW Audio Upgrades
+					.info
+						p Part of a complete rebranding for a company providing custom BMW sound system upgrades. 
+							| This is a large, complicated site which I did not design but helped implement with <a href="http://yujitomita.com/">Yuji Tomita</a>.
+
+				.item.col-md-4
 					a(href="http://makingroomformanufacturing.org", target="_blank").preview
 						img(src="assets/img/portfolio/ilc-phi.png")
 						h2.name Making Room for Manufacturing
@@ -49,14 +50,15 @@ block content
 						p
 							i.bg-yellow currently in development
 
+			.row
+
 				.item.col-md-4
 					a(href="http://sia.planning.unc.edu/", target="_blank").preview
 						img(src="assets/img/portfolio/nkaza-phi.png")
 						h2.name Nikhil Kaza
 					.info
-						p Extremely customized personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automated bibliography generation.  Fully loaded!
+						p Extremely customized personal website of UNC professor Nikhil Kaza.  It features an extensive CMS, a project wiki, tumblr integration, and automated bibliography generation.
 
-			.row
 				.item.col-md-4
 					a(href="http://www.characterarcade.com/puzzle/find_the_famous_pineapple/1be72c68-7488-11e2-a3c5-1cc1dee6474c/", target="_blank").preview
 						img(src="assets/img/portfolio/pineapple-phi.png")
@@ -90,21 +92,21 @@ block content
 					.info
 						p A minimal site designed to showcase a private art dealer's collection
 
-				.item.your-site.col-md-4
-					a(href="#contact", target="_blank").preview
-						img.dummy-img(src="assets/img/portfolio/blank-phi.png")
-						h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
-							| YOUR 
-							br
-							| SITE?
-					.info
-						p 
-							em 
-								| This could be you!
-						p
-							em
-								a(href="#contact") Contact me 
-								| to discuss your website.
+				//- .item.your-site.col-md-4
+				//- 	a(href="#contact", target="_blank").preview
+				//- 		img.dummy-img(src="assets/img/portfolio/blank-phi.png")
+				//- 		h2.dark(style="position: absolute; bottom: 10px; right: 10px; font-size: 52px; font-weight: bold; margin: 0; text-shadow: 1px 1px black") 
+				//- 			| YOUR 
+				//- 			br
+				//- 			| SITE?
+				//- 	.info
+				//- 		p 
+				//- 			em 
+				//- 				| This could be you!
+				//- 		p
+				//- 			em
+				//- 				a(href="#contact") Contact me 
+				//- 				| to discuss your website.
 
 
 
@@ -190,7 +192,13 @@ block content
 
 			.summary
 				.block
-					p Rather than fill out some stodgy old contact form, why not just email me? 
+					p Rather than fill out some stodgy contact form, why not just email me? 
 					p
 						a(href="mailto:michael@lv11.co").bg-yellow MICHAEL@LV11.CO
 					p Hope to hear from you!  (Yes, that's <b>.co</b>, not <b>.com</b>!)
+
+		section
+			p.center P.S. &mdash; You can find more ways to connect with me on the <a href="/">main page &larr; </a>
+
+
+
