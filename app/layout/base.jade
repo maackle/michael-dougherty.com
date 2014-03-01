@@ -2,37 +2,41 @@
 
 html
 	head
-		link(rel="stylesheet", href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css")
-		link(rel="stylesheet", href="/assets/styles/manifest.css")
+		block scripts
+			link(rel="stylesheet", href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css")
+			link(rel="stylesheet", href="/assets/styles/manifest.css")
 
 		script(type="text/javascript", src="/assets/bower_components/jquery/jquery.min.js")
 		script(type="text/javascript", src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js")
 		script(type="text/javascript", src="/assets/scripts/main.js")
 	body
-		#root
-			block navbar
-				.fixed-container(style="height: 55px;")
-					.fixed
-						.container
-							nav#navbar
-								ul.right
-									//- li
-									//- 	span email:
-									li.dither-light
-										a(href="mailto:michael@lv11.co") michael@lv11.co
-								ul
-									li.dither-black
-										a(href="/", style="color: white;") Michael Dougherty
-									li.dither-light
-										a(href="/blog") blog
-									li.dither-light
-										a(href="/web.html") websites
-							#post-header
+		block body
+			#root
+				block navbar
+					.fixed-container(style="height: 55px;")
+						.fixed
+							.container
+								nav#navbar
+									ul.right
+										//- li
+										//- 	span email:
+										li.dither-light
+											a(href="mailto:michael@lv11.co") michael@lv11.co
+									ul
+										li.dither-black
+											a(href="/", style="color: white;") Michael Dougherty
+										li.dither-light
+											a(href="/blog") blog
+										li.dither-light
+											a(href="/web.html") websites
+										//- li.dither-light
+										//- 	a(href="/resume.html") résumé
+								#post-header
 
-			.container
-				block content
-			#root_footer
-		#footer_container
-			block footer
-				#pre-footer
-				footer#footer
+				.container
+					block content
+				#root_footer
+			#footer_container
+				block footer
+					#pre-footer
+					footer#footer
