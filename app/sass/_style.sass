@@ -22,7 +22,7 @@ a:link, a:visited, .link
 
 p
   margin: 0.5em auto
-  line-height: 1.25em
+  line-height: 1.5em
   text-align: justify
 
 i, em
@@ -287,6 +287,12 @@ hr.diag
       // max-width: 400px
       margin: 20px auto 20px
       padding-bottom: 20px
+      .info
+        @extend .block
+        margin: 20px 0
+        p
+          text-align: left
+      
       .preview
         display: block
         position: relative
@@ -300,6 +306,7 @@ hr.diag
           border: 0
           padding: 29px 0
         .name
+          position: relative
           margin: 0
           color: black
           text-shadow: 1px 1px 0 white
@@ -312,6 +319,11 @@ hr.diag
           &.light
             color: white
             text-shadow: 1px 1px 0 black
+        .i
+          position: absolute
+          top: 0
+          right: 0
+          padding: 20px
       &.your-site
         .info
           font-size: 1.1em
