@@ -1,5 +1,7 @@
 module.exports = (grunt) ->
 
+	port = 1337
+	lrPort = 37281
 
 	# Project configuration.
 	grunt.initConfig
@@ -12,10 +14,13 @@ module.exports = (grunt) ->
 		connect:
 			server:
 				options:
-					port: 1337
+					port: port
 					base: '<%= config.dist %>'
+					livereload: lrPort
 
 		watch:
+			options: 
+				livereload: lrPort
 			coffee:
 				files: ["<%= config.app %>/coffee/*.coffee"]
 				tasks: ['coffee']
@@ -38,6 +43,7 @@ module.exports = (grunt) ->
 		compass:
 			dist:
 				options:
+					require: 'susy'
 					sassDir: "<%= config.app %>/sass/",
 					cssDir: "<%= config.dist %>/assets/styles/",
 					environment: 'production'

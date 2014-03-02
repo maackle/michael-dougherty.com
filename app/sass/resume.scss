@@ -1,3 +1,171 @@
+@import url(http://fonts.googleapis.com/css?family=Della+Respira);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+@import 'susy';
+
+$header-font: 'Lato';
+$color-1: desaturate(lighten(#c0e5a0, 10%), 20%);
+$color-1-lt: lighten($color-1, 5%);
+$color-2: desaturate(lighten(#57e3ef, 10%), 20%);
+$color-2-lt: lighten($color-2, 13%);
+
+$gutter-left: 20px;
+$width-left: 135px;
+$margin-left: $width-left + $gutter-left;
+
+html, body {
+	text-align: center;
+	background: #efefef;
+	font-family: Lato;
+}
 
 h1, h2, h3, h4 {
+	font-family: $header-font;
+	text-transform: none;
+}
+
+.tippy-top {
+	@include clearfix;
+	margin-bottom: 15px;
+
+	margin-left: $margin-left;
+	.light {
+		font-weight: 300;
+		display: inline;
+	}
+	.title {
+	}
+	.contact {
+		letter-spacing: 0.075em;
+		text-align: left;
+		// background: $color-2;
+		height: 100%;
+		margin: 15px auto;
+		p {
+			margin: 5px auto;
+		}
+	}
+	h1, h2, h3, h4 {
+		margin: 0;
+	}
+}
+.michael {
+	font-size: 60px;
+
+}
+
+.heading-primary {
+	@include clearfix;
+	// border-bottom: 4px solid black;
+	// text-align: right;
+	text-transform: uppercase;
+	background: $color-1;
+	display: inline-block;
+	padding: 5px;
+	margin: 10px auto;
+	padding-left: $margin-left;
+	font-size: 30px;
+	font-weight: 300;
+}
+.heading-secondary {
+	// color: $color-1;
+	margin: 0;
+	margin-left: $margin-left;
+	border-bottom: 1px solid $color-1;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.resume-container {
+	@include container;
+	margin: 50px auto;
+	padding: 50px;
+	width: 768px;
+	text-align: left;
+	background: white;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.list {
+	@include clearfix;
+	margin: 10px auto;
+	> li {
+		margin: 10px auto;
+	}
+	margin: 0;
+	p {
+		margin: 0.25em auto;
+	}
+	.name {
+		// @include clearfix;
+		// font-family: $header-font;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: bold;
+		margin-bottom: 0;
+		vertical-align: baseline;
+		display: block;
+		margin-left: $margin-left;
+		padding: 0;
+	}
+	.location {
+		vertical-align: baseline;
+		display: block;
+		float: right;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+	.description {
+		@include clearfix;
+		margin-left: $margin-left;
+	}
+
+	.meta {
+		width: $width-left;
+		height: 100%;
+		float: left;
+		margin-right: $gutter-left;
+		// margin-top: 5px;
+		text-align: right;
+	}
+}
+
+.client-list {
+	
+}
+
+.client-main {
+	.name {
+	}
+	.meta {
+
+		li {
+			display: inline-block;
+			font-size: 0.8em;
+			// width: auto;
+			margin: 3px 1px;
+			padding: 2px;
+			font-weight: 300;
+		}
+		li.role {
+			background: $color-1-lt;
+		}
+		li.tech {
+			background: $color-2-lt;
+		}
+	}
+}
+
+.client-sub {
+	@include span-columns(3);
+	@include clearfix;
+
+	&:nth-child(4n) {
+		@include omega;
+	}
 }
