@@ -46,7 +46,7 @@ module.exports = (grunt) ->
 					require: 'susy'
 					sassDir: "<%= config.app %>/sass/",
 					cssDir: "<%= config.dist %>/assets/styles/",
-					environment: 'production'
+					environment: 'development'
 
 		jade: {
             dist: {

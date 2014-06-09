@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Della+Respira);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Cherry+Swash:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
@@ -5933,7 +5935,7 @@ a.thumbnail.active {
 
 /* line 63, ../bower_components/sass-bootstrap/lib/_progress-bars.scss */
 .progress-striped .progress-bar {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), right);
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5952,7 +5954,7 @@ a.thumbnail.active {
 }
 /* line 559, ../bower_components/sass-bootstrap/lib/_mixins.scss */
 .progress-striped .progress-bar-success {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), right);
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5964,7 +5966,7 @@ a.thumbnail.active {
 }
 /* line 559, ../bower_components/sass-bootstrap/lib/_mixins.scss */
 .progress-striped .progress-bar-info {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), right);
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5976,7 +5978,7 @@ a.thumbnail.active {
 }
 /* line 559, ../bower_components/sass-bootstrap/lib/_mixins.scss */
 .progress-striped .progress-bar-warning {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), right);
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5988,7 +5990,7 @@ a.thumbnail.active {
 }
 /* line 559, ../bower_components/sass-bootstrap/lib/_mixins.scss */
 .progress-striped .progress-bar-danger {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), right);
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -6967,7 +6969,7 @@ button.close {
 }
 /* line 82, ../bower_components/sass-bootstrap/lib/_carousel.scss */
 .carousel-control.left {
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-gradient(linear, 0% top, 100% top, left, right);
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -6978,7 +6980,7 @@ button.close {
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-gradient(linear, 0% top, 100% top, left, right);
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -8186,4 +8188,246 @@ hr.diag {
 #footer {
   height: 64px;
   background: #777777 url(/assets/img/bg-dither-black-12_5p-negative.png);
+}
+
+/* line 17, ../../../app/sass/resume.scss */
+html, body {
+  text-align: center;
+  background: #efefef;
+  font-family: Lato;
+}
+
+/* line 23, ../../../app/sass/resume.scss */
+h1, h2, h3, h4, .page-web .links a {
+  font-family: "Lato";
+  text-transform: none;
+}
+
+/* line 28, ../../../app/sass/resume.scss */
+.tippy-top {
+  margin-bottom: 15px;
+  margin-left: 155px;
+}
+/* line 20, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.tippy-top:before, .tippy-top:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.tippy-top:after {
+  clear: both;
+}
+/* line 33, ../../../app/sass/resume.scss */
+.tippy-top .light {
+  font-weight: 300;
+  display: inline;
+}
+/* line 39, ../../../app/sass/resume.scss */
+.tippy-top .contact {
+  letter-spacing: 0.075em;
+  text-align: left;
+  height: 100%;
+  margin: 15px auto;
+}
+/* line 45, ../../../app/sass/resume.scss */
+.tippy-top .contact p {
+  margin: 5px auto;
+}
+/* line 49, ../../../app/sass/resume.scss */
+.tippy-top h1, .tippy-top h2, .tippy-top h3, .tippy-top h4, .tippy-top .page-web .links a, .page-web .links .tippy-top a {
+  margin: 0;
+}
+
+/* line 53, ../../../app/sass/resume.scss */
+.michael {
+  font-size: 58px;
+}
+
+/* line 57, ../../../app/sass/resume.scss */
+.subheader {
+  font-size: 24px;
+}
+
+/* line 61, ../../../app/sass/resume.scss */
+.heading-primary {
+  text-transform: uppercase;
+  background: #dbe9cf;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px auto;
+  padding-left: 155px;
+  font-size: 30px;
+  font-weight: 300;
+}
+/* line 20, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.heading-primary:before, .heading-primary:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.heading-primary:after {
+  clear: both;
+}
+
+/* line 74, ../../../app/sass/resume.scss */
+.heading-secondary {
+  margin: 0;
+  margin-left: 155px;
+  border-bottom: 1px solid #dbe9cf;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 84, ../../../app/sass/resume.scss */
+.resume-nav {
+  width: 768px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+@media print {
+  /* line 94, ../../../app/sass/resume.scss */
+  .resume-nav {
+    display: none;
+  }
+}
+/* line 99, ../../../app/sass/resume.scss */
+.resume-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 50px auto;
+  padding: 50px;
+  width: 768px;
+  text-align: left;
+  background: white;
+}
+/* line 12, ../../../../../../../usr/local/var/rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+.resume-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 108, ../../../app/sass/resume.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 113, ../../../app/sass/resume.scss */
+.list {
+  margin: 10px auto;
+  margin: 0;
+}
+/* line 20, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.list:before, .list:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.list:after {
+  clear: both;
+}
+/* line 116, ../../../app/sass/resume.scss */
+.list > li {
+  margin: 10px auto;
+}
+/* line 120, ../../../app/sass/resume.scss */
+.list p {
+  margin: 0.25em auto;
+}
+/* line 123, ../../../app/sass/resume.scss */
+.list .name {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  display: block;
+  margin-left: 155px;
+  padding: 0;
+}
+/* line 135, ../../../app/sass/resume.scss */
+.list .location {
+  vertical-align: baseline;
+  display: block;
+  float: right;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+/* line 144, ../../../app/sass/resume.scss */
+.list .description {
+  margin-left: 155px;
+}
+/* line 20, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.list .description:before, .list .description:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.list .description:after {
+  clear: both;
+}
+/* line 149, ../../../app/sass/resume.scss */
+.list .meta {
+  width: 135px;
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+  text-align: right;
+}
+/* line 156, ../../../app/sass/resume.scss */
+.list .meta p {
+  text-align: right;
+}
+
+/* line 171, ../../../app/sass/resume.scss */
+.client-main .meta li {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 3px 1px;
+  padding: 2px;
+  font-weight: 300;
+}
+/* line 179, ../../../app/sass/resume.scss */
+.client-main .meta li.role {
+  background: #e8f1e1;
+}
+/* line 182, ../../../app/sass/resume.scss */
+.client-main .meta li.tech {
+  background: #c9eff3;
+}
+
+/* line 188, ../../../app/sass/resume.scss */
+.client-sub {
+  width: 73.68421%;
+  float: left;
+  margin-right: 5.26316%;
+}
+/* line 20, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.client-sub:before, .client-sub:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../bower_components/sass-bootstrap/lib/_mixins.scss */
+.client-sub:after {
+  clear: both;
+}
+/* line 192, ../../../app/sass/resume.scss */
+.client-sub:nth-child(4n) {
+  float: right;
+  margin-right: 0;
 }

@@ -2,8 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 @import 'susy';
+@import "manifest";
 
-$header-font: 'Lato';
+$resume-header-font: 'Lato';
 $color-1: desaturate(lighten(#c0e5a0, 10%), 20%);
 $color-1-lt: lighten($color-1, 5%);
 $color-2: desaturate(lighten(#57e3ef, 10%), 20%);
@@ -20,7 +21,7 @@ html, body {
 }
 
 h1, h2, h3, h4 {
-	font-family: $header-font;
+	font-family: $resume-header-font;
 	text-transform: none;
 }
 
@@ -121,7 +122,7 @@ ul {
 	}
 	.name {
 		// @include clearfix;
-		// font-family: $header-font;
+		// font-family: $resume-header-font;
 		font-size: 24px;
 		line-height: 24px;
 		font-weight: bold;

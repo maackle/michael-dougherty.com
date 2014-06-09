@@ -2,13 +2,14 @@
 
 html
 	head
-		block scripts
+		block styles
 			link(rel="stylesheet", href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css")
 			link(rel="stylesheet", href="/assets/styles/manifest.css")
 
-		script(type="text/javascript", src="/assets/bower_components/jquery/jquery.min.js")
-		script(type="text/javascript", src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js")
-		script(type="text/javascript", src="/assets/scripts/main.js")
+		block scripts
+			script(type="text/javascript", src="/assets/bower_components/jquery/jquery.min.js")
+			script(type="text/javascript", src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js")
+			script(type="text/javascript", src="/assets/scripts/main.js")
 	body
 		block body
 			#root
