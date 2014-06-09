@@ -162,7 +162,7 @@ ul {
 }
 
 .client-sub {
-	@include span-columns(3);
+	@include span(3);
 	@include clearfix;
 
 	&:nth-child(4n) {
