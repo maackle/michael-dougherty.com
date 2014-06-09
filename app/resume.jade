@@ -11,7 +11,7 @@ mixin client-main(name, location, roles, techs)
 					li.tech= tech
 		if location
 			.location= location
-		.name= name
+		.name!= name
 		.description
 			block
 
@@ -21,16 +21,16 @@ mixin client-sub(name, years)
 		.description
 			block
 
-block scripts
-	link(rel="stylesheet", href="/assets/styles/resume.css")
-
 block body
 	.container
+		.resume-nav
+			//- , onclick="window.history.back(); return false;"
+			a(href="/") &larr; back to site
 		.resume-container
 			.tippy-top
 				.title
 					h1.michael Michael Dougherty
-					h2 
+					h2.subheader 
 						| Web Development Consultant 
 						.light &mdash; Portland, OR
 				.contact
@@ -43,13 +43,13 @@ block body
 			ul.list.client-list
 				h3.heading-secondary 2014
 				+client-main("Sterling Lentz Design & Development", "Portland, OR", roles=['Lead Developer'], techs=['Python', 'Node.js', 'Rails'])
-					p Worked tightly with a designer to bring forth cutting edge web design.
+					p Worked as the Development arm of a small design studio to bring forth various cutting-edge websites.
 				+client-main("SalterMitchell", "Washington, D.C.", roles=['Lead Developer', 'Developer'], techs=['Python', 'Flask', 'Jade'])
 					p Single-handedly developed a site for a genetics research startup which interfaces with a complex API. Worked tightly with a small team of in-house designers and developers as a remote contractor across the country.
 				h3.heading-secondary 2013
 				+client-main("University of North Carolina", "Chapel Hill, NC", roles=['Lead Designer', 'Lead Developer'], techs=['Python', 'Django', 'Sass', 'PostgreSQL'])
 					p Worked closely with a UNC research team to design and develop an open-source web application for visualizing and interacting with geospatial data. Designed a public-facing site to showcase this application. Also designed a highly customized website to showcase a professor's research projects.
-				+client-main("partlyhuman / This Is Pop / NBC Universal", "New York, NY", roles=['Developer'], techs=['PHP', 'Laravel'])
+				+client-main("partlyhuman / This Is Pop / NBC&nbsp;Universal", "New York, NY", roles=['Developer'], techs=['PHP', 'Laravel'])
 					p Worked with one other developer and a game design team to create a new online HTML5 game for NBC Universal's Character Arcade. Designed the entire backend to the game, working closely with the NBC team to connect their API to the game's frontend. Helped the NBC team white-label the game so as to produce other versions with different game assets and branding.
 				+client-main("Grove", "Portland, OR", roles=['Developer'], techs=['CoffeeScript', 'HTML5 Canvas'])
 					p Collaborated with the Lead Developer to create a feature-rich HTML5 tool for iPhone case customization. Also did maintenance and implemented various new features on their highy-customized Django-powered eCommerce site.

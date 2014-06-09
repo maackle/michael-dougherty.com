@@ -50,8 +50,11 @@ h1, h2, h3, h4 {
 	}
 }
 .michael {
-	font-size: 60px;
+	font-size: 58px;
+}
 
+.subheader {
+	font-size: 24px;
 }
 
 .heading-primary {
@@ -74,6 +77,22 @@ h1, h2, h3, h4 {
 	border-bottom: 1px solid $color-1;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+
+.resume-nav {
+	width: 768px;
+	margin: 20px auto;
+	text-align: left;
+	a {
+		// display: inline-block;
+	}
+}
+
+@media print {
+	.resume-nav {
+		display: none;
+	}
 }
 
 .resume-container {
@@ -119,6 +138,7 @@ ul {
 		font-size: 20px;
 		line-height: 24px;
 		font-weight: 300;
+		margin-left: 30px;
 	}
 	.description {
 		@include clearfix;
@@ -132,6 +152,9 @@ ul {
 		margin-right: $gutter-left;
 		// margin-top: 5px;
 		text-align: right;
+		p {
+			text-align: right;
+		}
 	}
 }
 
@@ -169,3 +192,14 @@ ul {
 		@include omega;
 	}
 }
+
+// @media (max-width: 768px) {
+// 	.list {
+// 		.name {
+// 			float: none;
+// 		}
+// 		.location {
+// 			float: none;
+// 		}
+// 	}
+// }
