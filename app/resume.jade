@@ -21,11 +21,11 @@ mixin client-sub(name, years)
 		.description
 			block
 
-block append styles
+block styles
 	link(rel="stylesheet", href="/assets/styles/resume.css")
 
 block body
-	.container
+		//- .container
 		.resume-nav
 			//- , onclick="window.history.back(); return false;"
 			a(href="/") &larr; back to site
@@ -41,9 +41,9 @@ block body
 					P michael@LV11.CO
 					P (732) 991 6167
 
-			h2.heading-primary Clients
-
 			ul.list.client-list
+				h2.heading-primary Clients
+
 				h3.heading-secondary 2014
 				+client-main("Sterling Lentz Design & Development", "Portland, OR", roles=['Lead Developer'], techs=['Python', 'Node.js', 'Rails'])
 					p Worked as the Development arm of a small design studio to bring forth various cutting-edge websites.
@@ -65,39 +65,39 @@ block body
 			//- 	+client-sub("Talik Creative Agency", [2010, 2011])
 			//- 		| 20+ websites
 			
-			h2.heading-primary Employment
-
 			ul.list.employment-list
+				h2.heading-primary Employment
+
 				li
 					.meta 2010 - present
+					.location Portland, OR
 					.name Web Development Consultant
-						.location Portland, OR
 					.description
 						p Doing everything.
 				li
 					.meta 
 						p Research Assistant
 						p 2005 - 2009
+					.location State College, PA
 					.name Pennsylvania State University
-						.location State College, PA
 					.description
 						p Designed and coded simulations of crowd behavior in C++.
 						p Used data mining and neural networks to predict strength and reliability of materials based on microphotographic cross-sections
 						p Sole programmer on these and several other projects
 
-			h2.heading-primary Education
 
 			ul.list.education-list
+				h2.heading-primary Education
 				li
 					.meta 2007 - 2009
+					.location Penn State University
 					.name M.S. Computer Science
-						.location Penn State University
 					.description
 						p Completed entire program <em>except for thesis</em>
 				li
 					.meta 2002 - 2006
+					.location Penn State University
 					.name B.S. Electrical Engineering
-						.location Penn State University
 
 			//- h2.heading-primary other
 

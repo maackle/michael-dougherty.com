@@ -35,6 +35,7 @@ h1, h2, h3, h4 {
 		display: inline;
 	}
 	.title {
+
 	}
 	.contact {
 		letter-spacing: 0.075em;
@@ -50,6 +51,7 @@ h1, h2, h3, h4 {
 		margin: 0;
 	}
 }
+
 .michael {
 	font-size: 58px;
 }
@@ -73,7 +75,7 @@ h1, h2, h3, h4 {
 }
 .heading-secondary {
 	// color: $color-1;
-	margin: 0;
+	margin: 10px auto;
 	margin-left: $margin-left;
 	border-bottom: 1px solid $color-1;
 	font-size: 18px;
@@ -90,17 +92,12 @@ h1, h2, h3, h4 {
 	}
 }
 
-@media print {
-	.resume-nav {
-		display: none;
-	}
-}
-
 .resume-container {
 	@include container;
 	margin: 50px auto;
 	padding: 50px;
 	width: 768px;
+	min-width: 768px;
 	text-align: left;
 	background: white;
 }
@@ -113,13 +110,16 @@ ul {
 .list {
 	@include clearfix;
 	margin: 10px auto;
-	> li {
-		margin: 10px auto;
-	}
 	margin: 0;
+	page-break-inside: avoid;
+	> li {
+		margin: 20px auto;
+	}
+
 	p {
 		margin: 0.25em auto;
 	}
+
 	.name {
 		// @include clearfix;
 		// font-family: $resume-header-font;
@@ -193,6 +193,24 @@ ul {
 		@include omega;
 	}
 }
+
+@media print {
+	.resume-nav {
+		display: none;
+	}
+
+	.resume-container {
+		margin: 0;
+		// padding: 0;
+	}
+
+	.list {
+		.role {
+			font-style: italic;
+		}
+	}
+}
+
 
 // @media (max-width: 768px) {
 // 	.list {
