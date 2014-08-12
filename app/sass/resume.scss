@@ -110,9 +110,10 @@ ul {
 .list {
 	@include clearfix;
 	margin: 10px auto;
-	margin: 0;
+	margin: 0;		
 	page-break-inside: avoid;
 	> li {
+		page-break-inside: avoid;
 		margin: 20px auto;
 	}
 
