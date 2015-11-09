@@ -659,20 +659,19 @@ ul {
 .list {
   overflow: hidden;
   *zoom: 1;
-  margin: 10px auto;
-  margin: 0;
+  margin: 0 auto;
   page-break-inside: avoid;
 }
-/* line 115, ../../../app/sass/resume.scss */
+/* line 114, ../../../app/sass/resume.scss */
 .list > li {
   page-break-inside: avoid;
   margin: 20px auto;
 }
-/* line 120, ../../../app/sass/resume.scss */
+/* line 119, ../../../app/sass/resume.scss */
 .list p {
   margin: 0.25em auto;
 }
-/* line 124, ../../../app/sass/resume.scss */
+/* line 123, ../../../app/sass/resume.scss */
 .list .name {
   font-size: 24px;
   line-height: 24px;
@@ -683,7 +682,7 @@ ul {
   margin-left: 155px;
   padding: 0;
 }
-/* line 136, ../../../app/sass/resume.scss */
+/* line 135, ../../../app/sass/resume.scss */
 .list .location {
   vertical-align: baseline;
   display: block;
@@ -693,13 +692,13 @@ ul {
   font-weight: 300;
   margin-left: 30px;
 }
-/* line 145, ../../../app/sass/resume.scss */
+/* line 144, ../../../app/sass/resume.scss */
 .list .description {
   overflow: hidden;
   *zoom: 1;
   margin-left: 155px;
 }
-/* line 150, ../../../app/sass/resume.scss */
+/* line 149, ../../../app/sass/resume.scss */
 .list .meta {
   width: 135px;
   height: 100%;
@@ -707,12 +706,12 @@ ul {
   margin-right: 20px;
   text-align: right;
 }
-/* line 157, ../../../app/sass/resume.scss */
+/* line 156, ../../../app/sass/resume.scss */
 .list .meta p {
   text-align: right;
 }
 
-/* line 172, ../../../app/sass/resume.scss */
+/* line 171, ../../../app/sass/resume.scss */
 .client-main .meta li {
   display: inline-block;
   font-size: 0.8em;
@@ -720,16 +719,16 @@ ul {
   padding: 2px;
   font-weight: 300;
 }
-/* line 180, ../../../app/sass/resume.scss */
+/* line 179, ../../../app/sass/resume.scss */
 .client-main .meta li.role {
   background: #e8f1e1;
 }
-/* line 183, ../../../app/sass/resume.scss */
+/* line 182, ../../../app/sass/resume.scss */
 .client-main .meta li.tech {
   background: #c9eff3;
 }
 
-/* line 189, ../../../app/sass/resume.scss */
+/* line 188, ../../../app/sass/resume.scss */
 .client-sub {
   width: 73.68421%;
   float: left;
@@ -737,24 +736,24 @@ ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 193, ../../../app/sass/resume.scss */
+/* line 192, ../../../app/sass/resume.scss */
 .client-sub:nth-child(4n) {
   float: right;
   margin-right: 0;
 }
 
 @media print {
-  /* line 199, ../../../app/sass/resume.scss */
+  /* line 198, ../../../app/sass/resume.scss */
   .resume-nav {
     display: none;
   }
 
-  /* line 203, ../../../app/sass/resume.scss */
+  /* line 202, ../../../app/sass/resume.scss */
   .resume-container {
     margin: 0;
   }
 
-  /* line 209, ../../../app/sass/resume.scss */
+  /* line 208, ../../../app/sass/resume.scss */
   .list .role {
     font-style: italic;
   }
