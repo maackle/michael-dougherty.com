@@ -114,6 +114,7 @@ ul {
 	> li {
 		page-break-inside: avoid;
 		margin: 20px auto;
+		clear: left;
 	}
 
 	p {
@@ -151,10 +152,13 @@ ul {
 		height: 100%;
 		float: left;
 		margin-right: $gutter-left;
-		// margin-top: 5px;
+		margin-bottom: 10px;
 		text-align: right;
 		p {
 			text-align: right;
+			vertical-align: top;
+			margin-top: 0;
+
 		}
 	}
 }
@@ -163,25 +167,21 @@ ul {
 	// padding-top: 50px;
 }
 
-.client-main {
-	.name {
+.meta {
+	li {
+		display: inline-block;
+		font-size: 0.8em;
+		// width: auto;
+		margin: 3px 1px;
+		padding: 2px;
+		font-weight: 300;
 	}
-	.meta {
 
-		li {
-			display: inline-block;
-			font-size: 0.8em;
-			// width: auto;
-			margin: 3px 1px;
-			padding: 2px;
-			font-weight: 300;
-		}
-		li.role {
-			background: $color-1-lt;
-		}
-		li.tech {
-			background: $color-2-lt;
-		}
+	li.role {
+		background: $color-1-lt;
+	}
+	li.tech {
+		background: $color-2-lt;
 	}
 }
 
