@@ -29,6 +29,7 @@ block body
 		.resume-nav
 			//- , onclick="window.history.back(); return false;"
 			a(href="/") &larr; back to site
+			a(href="/assets/resume.pdf") &dArr; pdf version
 		.resume-container
 			.tippy-top
 				.title
@@ -36,28 +37,31 @@ block body
 					h2.subheader
 						| Software Engineer
 						.light &mdash; Portland, OR
-				.contact
-					p: a.normal(href="http://michaeldougherty.info") http://michaeldougherty.info
-					p: a.normal(href="mailto:michael@lv11.co?subject=michaeldougherty.info") michael@LV11.CO
-					p: a.normal(href="tel:+17329916167")  1-732-991-6167
+						br
+						a.light(href="http://michaeldougherty.info") http://michaeldougherty.info
+				//- .contact
+				//- 	p: a.normal(href="http://michaeldougherty.info") http://michaeldougherty.info
+				//- 	p: a.normal(href="mailto:michael.douglas.dougherty@gmail.com?subject=resume") michael.douglas.dougherty@gmail.com
+				//- 	p: a.normal(href="tel:+17329916167")  1-732-991-6167
+
+				p.blurb Independent contractor providing efficient, correct software solutions to complex problems which minimize harm and maximize good.
 
 			ul.list.employment-list
-				h2.heading-primary Employment
-
+				h2.heading-primary Past Employment Experience
 				li
 					.meta
-						p Software Engineer
-						p 2016 - present
+						p Senior Software Engineer
+						p 2016 - 2017
 						ul
 							li.tech ReactJS
 							li.tech Django
-							li.tech ES2015
-							li.tech JSX
+							li.tech Docker
 					.location Portland, OR
 					.name CrowdStreet, Inc.
 					.description
-						p Rewriting huge swaths of a web application in React to bring much more richness to the front-end and maintainability to the codebase.
-						p Moved the entire codebase to a Webpack build system for ES2015, JSX, and Less transpilation.
+						p Maintained and built features for a large existing Django web app
+						p Did a greenfield rewrite of large swaths of the front end in React; built a custom data table framework
+						p Owned and maintained a multi-instance Docker-based devops setup
 				li
 					.meta
 						p Software Engineer
@@ -113,7 +117,7 @@ block body
 					.name B.S. Electrical Engineering
 
 			ul.list.client-list
-				h2.heading-primary Clients
+				h2.heading-primary Past Clients
 
 				h3.heading-secondary 2014
 				+client-main("Sterling Lentz Design & Development", "Portland, OR", roles=['Lead Developer'], techs=['Python', 'Node.js', 'Rails'])
