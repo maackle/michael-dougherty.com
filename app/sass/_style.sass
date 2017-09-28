@@ -9,7 +9,7 @@ html, body
   color: #666
   height: 100%
 
-.container 
+.container
   min-width: 630px
 
 a:link, a:visited, .link
@@ -25,7 +25,6 @@ a:link, a:visited, .link
 p
   margin: 0.5em auto
   line-height: 1.5em
-  text-align: justify
 
 i, em
   font-style: italic
@@ -41,6 +40,9 @@ h1, h2, h3, h4
   color: #111
   // letter-spacing: -0.11em;
 
+h5, h6
+  font-family: 'Inconsolata', serif
+
 h1
   font-size: 2.5em
 
@@ -52,6 +54,7 @@ h3
 
 h4
   font-size: 1.2em
+
 
 .mw-200
   min-width: 200px
@@ -108,7 +111,7 @@ hr.diag
 
 .small
   font-size: 0.9em
-  
+
 .smaller
   font-size: 0.75em
 
@@ -121,7 +124,7 @@ hr.diag
 .left
   text-align: left
 .center
-  text-align: center
+  text-align: center !important
 .right
   text-align: right
 
@@ -142,10 +145,12 @@ hr.diag
 .summary
   .block
     border: none
-    
+    text-align: left
+
 .item, .summary
+  transition: color 300ms
   &:hover
-    color: #333
+    color: #111
 
 .dither-black
   background: #888888 url(/assets/img/bg-dither-dark.png)
@@ -273,7 +278,6 @@ hr.diag
     margin: 0 auto
     max-width: 800px
     p
-      text-align: center
       font-size: 1.1em
       line-height: 1.75em
   .skills
@@ -294,7 +298,7 @@ hr.diag
         margin: 20px 0
         p
           text-align: left
-      
+
       .preview
         display: block
         position: relative
