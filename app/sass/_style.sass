@@ -9,8 +9,9 @@ html, body
   color: #666
   height: 100%
 
-.container
-  min-width: 630px
+@media(min-width: 650px)
+  .container
+    min-width: 630px
 
 a:link, a:visited, .link
   text-decoration: none
@@ -171,19 +172,24 @@ hr.diag
 .fixed
   position: fixed
   width: 100%
+  max-width: 100vw
   z-index: 100
   background: rgba($bg-color, 0.9)
 
 #navbar
-  margin-top: 10px
+  margin-top: 5px
   font-family: 'Cherry Swash', sans-serif
   font-size: 20px
   @media(min-width: 650px)
     font-size: 28px
+  @media(max-width: 500px)
+    text-align: center
   ul
     list-style: none
     margin-bottom: 0
+    display: inline-block
     li
+      margin-top: 5px
       display: inline-block
       a, span
         display: inline-block
