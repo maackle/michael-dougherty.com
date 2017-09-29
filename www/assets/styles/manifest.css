@@ -333,59 +333,66 @@ hr.diag {
 
 /* line 177, ../../../app/sass/_style.sass */
 #navbar {
+  margin-top: 10px;
   font-family: "Cherry Swash", sans-serif;
   font-size: 20px;
   clear: both;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 180, ../../../app/sass/_style.sass */
+@media(min-width: 650px) {
+  /* line 177, ../../../app/sass/_style.sass */
+  #navbar {
+    font-size: 28px;
+  }
+}
+/* line 183, ../../../app/sass/_style.sass */
 #navbar ul {
   list-style: none;
   margin-bottom: 0;
 }
-/* line 183, ../../../app/sass/_style.sass */
+/* line 186, ../../../app/sass/_style.sass */
 #navbar ul li {
   display: inline-block;
 }
-/* line 185, ../../../app/sass/_style.sass */
+/* line 188, ../../../app/sass/_style.sass */
 #navbar ul li a, #navbar ul li span {
   display: inline-block;
   padding: 5px 15px;
   margin: 0;
 }
-/* line 189, ../../../app/sass/_style.sass */
+/* line 192, ../../../app/sass/_style.sass */
 #navbar ul li a {
   color: #222;
 }
-/* line 191, ../../../app/sass/_style.sass */
+/* line 194, ../../../app/sass/_style.sass */
 #navbar ul li img {
   vertical-align: middle;
 }
-/* line 193, ../../../app/sass/_style.sass */
+/* line 196, ../../../app/sass/_style.sass */
 #navbar ul li.dither {
   background: #888888 url(/assets/img/bg-dither-dark.png);
   color: white;
 }
-/* line 196, ../../../app/sass/_style.sass */
+/* line 199, ../../../app/sass/_style.sass */
 #navbar ul li.dither a {
   color: white;
 }
-/* line 198, ../../../app/sass/_style.sass */
+/* line 201, ../../../app/sass/_style.sass */
 #navbar ul.right {
   vertical-align: bottom;
   float: right;
 }
 
-/* line 207, ../../../app/sass/_style.sass */
+/* line 210, ../../../app/sass/_style.sass */
 #stripes {
   min-height: 100%;
 }
-/* line 209, ../../../app/sass/_style.sass */
+/* line 212, ../../../app/sass/_style.sass */
 #stripes ul {
   min-height: 100%;
 }
-/* line 212, ../../../app/sass/_style.sass */
+/* line 215, ../../../app/sass/_style.sass */
 #stripes ul li a {
   display: block;
   padding: 10px;
@@ -396,7 +403,7 @@ hr.diag {
   font-style: italic;
 }
 
-/* line 230, ../../../app/sass/_style.sass */
+/* line 233, ../../../app/sass/_style.sass */
 .block, .block-small, .block-tiny, .page-web .portfolio .item .info {
   text-align: center;
   background: #fff;
@@ -405,12 +412,12 @@ hr.diag {
   margin: 15px;
   display: inline-block;
 }
-/* line 238, ../../../app/sass/_style.sass */
+/* line 241, ../../../app/sass/_style.sass */
 .block a, .block-small a, .block-tiny a, .page-web .portfolio .item .info a {
   display: inline-block;
 }
 
-/* line 241, ../../../app/sass/_style.sass */
+/* line 244, ../../../app/sass/_style.sass */
 .block-small {
   text-align: left;
   padding: 10px;
@@ -418,83 +425,83 @@ hr.diag {
   display: block;
 }
 
-/* line 248, ../../../app/sass/_style.sass */
+/* line 251, ../../../app/sass/_style.sass */
 .block-tiny {
   padding: 3px;
   margin: 1px;
   display: inline-block;
 }
 
-/* line 255, ../../../app/sass/_style.sass */
+/* line 258, ../../../app/sass/_style.sass */
 .page-index {
   text-align: center;
 }
 
-/* line 262, ../../../app/sass/_style.sass */
+/* line 265, ../../../app/sass/_style.sass */
 .page-web section, .page-web .section {
   margin: 60px 0;
   clear: both;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 266, ../../../app/sass/_style.sass */
+/* line 269, ../../../app/sass/_style.sass */
 .page-web .links {
   text-align: center;
 }
-/* line 268, ../../../app/sass/_style.sass */
+/* line 271, ../../../app/sass/_style.sass */
 .page-web .links a {
   color: #42adad;
   display: inline-block;
   padding: 10px;
   margin: 0 45px;
 }
-/* line 276, ../../../app/sass/_style.sass */
+/* line 279, ../../../app/sass/_style.sass */
 .page-web .summary {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
 }
-/* line 280, ../../../app/sass/_style.sass */
+/* line 283, ../../../app/sass/_style.sass */
 .page-web .summary p {
   font-size: 1.1em;
   line-height: 1.75em;
 }
-/* line 284, ../../../app/sass/_style.sass */
+/* line 287, ../../../app/sass/_style.sass */
 .page-web .skills .info {
   text-align: left;
 }
-/* line 288, ../../../app/sass/_style.sass */
+/* line 291, ../../../app/sass/_style.sass */
 .page-web .portfolio .item {
   margin: 20px auto 20px;
   padding-bottom: 20px;
 }
-/* line 296, ../../../app/sass/_style.sass */
+/* line 299, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .info {
   margin: 20px 0;
 }
-/* line 299, ../../../app/sass/_style.sass */
+/* line 302, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .info p {
   text-align: left;
 }
-/* line 302, ../../../app/sass/_style.sass */
+/* line 305, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview {
   display: block;
   position: relative;
 }
-/* line 305, ../../../app/sass/_style.sass */
+/* line 308, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview img, .page-web .portfolio .item .preview .dummy-img {
   border-top: 3px double #333;
   border-bottom: 3px solid #333;
   width: 100%;
   max-width: 100%;
 }
-/* line 310, ../../../app/sass/_style.sass */
+/* line 313, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview .dummy-img {
   background: url(/assets/img/bg-dither-gray.png);
   border: 0;
   padding: 29px 0;
 }
-/* line 314, ../../../app/sass/_style.sass */
+/* line 317, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview .name {
   position: relative;
   margin: 0;
@@ -504,52 +511,52 @@ hr.diag {
   padding: 0 10px;
   background: url(/assets/img/bg-dither-gray.png);
 }
-/* line 322, ../../../app/sass/_style.sass */
+/* line 325, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview .name.dark {
   color: black;
   text-shadow: 1px 1px 0 white;
 }
-/* line 325, ../../../app/sass/_style.sass */
+/* line 328, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview .name.light {
   color: white;
   text-shadow: 1px 1px 0 black;
 }
-/* line 328, ../../../app/sass/_style.sass */
+/* line 331, ../../../app/sass/_style.sass */
 .page-web .portfolio .item .preview .i {
   position: absolute;
   top: 0;
   right: 0;
   padding: 20px;
 }
-/* line 334, ../../../app/sass/_style.sass */
+/* line 337, ../../../app/sass/_style.sass */
 .page-web .portfolio .item.your-site .info {
   font-size: 1.1em;
 }
-/* line 338, ../../../app/sass/_style.sass */
+/* line 341, ../../../app/sass/_style.sass */
 .page-web .tools .item:hover {
   background: #ffc;
   color: #222;
 }
-/* line 343, ../../../app/sass/_style.sass */
+/* line 346, ../../../app/sass/_style.sass */
 .page-web .tools ul li p {
   font-size: 0.8em;
   text-align: left;
 }
 
-/* line 351, ../../../app/sass/_style.sass */
+/* line 354, ../../../app/sass/_style.sass */
 #post-header {
   height: 16px;
   background: url(/assets/img/bg-dither-black-12_5p.png);
 }
 
-/* line 355, ../../../app/sass/_style.sass */
+/* line 358, ../../../app/sass/_style.sass */
 #pre-footer {
   height: 64px;
   background: url(/assets/img/bg-hatch-black-8.png);
   background: url(/assets/img/bg-dither-black-12_5p.png);
 }
 
-/* line 360, ../../../app/sass/_style.sass */
+/* line 363, ../../../app/sass/_style.sass */
 #footer {
   height: 64px;
   background: #777777 url(/assets/img/bg-dither-black-12_5p-negative.png);
