@@ -49,7 +49,20 @@ block body
 				p.blurb Independent contractor providing efficient, correct software solutions to complex problems which minimize harm and maximize good.
 
 			ul.list.employment-list
-				h2.heading-primary Past Employment Experience
+				h2.heading-primary Employment Experience
+				li
+					.meta
+						p Software Lead
+						p 2017 - present
+						ul
+							li.tech Python
+							li.tech React
+							li.tech Microcontrollers
+					.location Portland, OR
+					.name PLANT Group
+					.description
+						p Wrote software for ESP8266 microcontrollers used to control smart irrigation systems and monitor soil conditions
+						p Built a client-facing web app to manage and report on said microcontrollers
 				li
 					.meta
 						p Senior Software Engineer
@@ -121,14 +134,19 @@ block body
 			ul.list.client-list
 				h2.heading-primary Past Clients
 
+				h3.heading-secondary 2017
+				+client-main("University of North Carolina", "Chapen Hill, NC", roles=['Lead Developer'], techs=['Python', 'Elm'])
+					p Developed a web app for collecting data from a wide audience of participants [<a href="http://www.sensingsettlements.org">http://www.sensingsettlements.org</a>]
+
 				h3.heading-secondary 2014
 				+client-main("Sterling Lentz Design & Development", "Portland, OR", roles=['Lead Developer'], techs=['Python', 'Node.js', 'Rails'])
 					p Worked as the Development arm of a small design studio to bring forth various cutting-edge websites.
 				+client-main("SalterMitchell", "Washington, D.C.", roles=['Lead Developer', 'Developer'], techs=['Python', 'Flask', 'Jade'])
 					p Single-handedly developed a site for a genetics research startup which interfaces with a complex API. Worked tightly with a small team of in-house designers and developers as a remote contractor across the country.
+
 				h3.heading-secondary 2013
 				+client-main("University of North Carolina", "Chapel Hill, NC", roles=['Lead Designer', 'Lead Developer'], techs=['Python', 'Django', 'Sass', 'PostgreSQL'])
-					p Worked closely with a UNC research team to design and develop an open-source web application for visualizing and interacting with geospatial data. Designed a public-facing site to showcase this application. Also designed a highly customized website to showcase a professor's research projects.
+					p Worked closely with a UNC research team to design and develop an open-source web application for visualizing and interacting with geospatial data. Designed a public-facing site to showcase this application. Also designed a highly customized website to showcase a professor's research projects. <br/> [<a href="http://www.makingroomformanufacturing.org">http://www.makingroomformanufacturing.org</a>]
 				+client-main("partlyhuman / This Is Pop / NBC&nbsp;Universal", "New York, NY", roles=['Developer'], techs=['PHP', 'Laravel'])
 					p Worked with one other developer and a game design team to create a new online HTML5 game for NBC Universal's Character Arcade. Designed the entire backend to the game, working closely with the NBC team to connect their API to the game's frontend. Helped the NBC team white-label the game so as to produce other versions with different game assets and branding.
 				+client-main("Grove", "Portland, OR", roles=['Developer'], techs=['CoffeeScript', 'HTML5 Canvas'])
